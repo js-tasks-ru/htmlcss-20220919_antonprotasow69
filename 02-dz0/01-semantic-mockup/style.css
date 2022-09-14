@@ -1,0 +1,42 @@
+html {
+    
+    background-color: green;
+}
+h1 {
+    margin:0;
+    
+    padding-bottom: 10px;
+    padding-top:10px;
+    background-color: red;
+    color:aliceblue;
+    font-size: 4em;
+    padding-left: 50%;
+    
+    
+}
+
+nav {
+    padding-left: 42.5%;
+    padding-bottom: 20px;
+    padding-top:20px;
+    background-color: orange;
+    font-size: 2.25em;
+    
+}
+
+article {
+    
+    background-color: blue;
+    font-size: 150%;
+    color: whitesmoke;
+}
+
+footer {
+    
+    font-size: 4em;
+    padding-left: 50%;
+    background-color: violet;
+    padding-bottom:10px;
+    padding-top:10px;
+    color:aqua;
+}
