@@ -3,8 +3,10 @@ html {
     background-color: green;
 }
 h1 {
-    margin:0;
-    
+    margin: -20px;
+   
+    margin-bottom: 0px;
+    margin-top: 0px;
     padding-bottom: 10px;
     padding-top:10px;
     background-color: red;
@@ -16,6 +18,8 @@ h1 {
 }
 
 nav {
+    
+    margin: -10px;
     padding-left: 42.5%;
     padding-bottom: 20px;
     padding-top:20px;
@@ -24,19 +28,25 @@ nav {
     
 }
 
-article {
+article   {
     
+    padding-left: 10px;
     background-color: blue;
-    font-size: 150%;
+    font-size: 250%;
     color: whitesmoke;
 }
 
+article ul {
+    margin-bottom: 0;
+}
+
+
 footer {
-    
+    margin: -10px;
     font-size: 4em;
     padding-left: 50%;
     background-color: violet;
-    padding-bottom:10px;
-    padding-top:10px;
-    color:aqua;
+    padding-bottom:40px;
+    padding-top:40px;
+    color:brown;
 }
