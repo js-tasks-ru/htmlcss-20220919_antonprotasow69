@@ -34,17 +34,20 @@
     background-color: #ffffff;
     color: #495057;
     border-color: #ACB5BD;
-    transition: opacity 200ms ease-in-out, background 16ms ease-in-out;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button:hover
 {
+  
   cursor: pointer;
+  
 }
 
 .button_primary:hover
 {
     background-color: #2342C0;
+    
 }
 
 
