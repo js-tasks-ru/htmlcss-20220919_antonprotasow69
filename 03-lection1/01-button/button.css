@@ -1,1 +1,90 @@
-/* Стилизация кнопки */
+.button
+{   border: 1px ;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+  width: 189px;
+  height: 48px;
+  display: inline;
+  border-radius: 8px;
+}
+
+.button_primary
+{
+    background-color: #4263EB;
+    color: #ffffff;
+    border-color: #4263EB;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+     
+}
+
+.button_secondary
+{
+    background-color: #7048E8;
+    color: #ffffff;
+    border-color: #7048E8;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button_alternate
+{   border: 1px solid #ACB5BD;
+    background-color: #ffffff;
+    color: #495057;
+    border-color: #ACB5BD;
+    transition: opacity 200ms ease-in-out, background 16ms ease-in-out;
+}
+
+.button:hover
+{
+  cursor: pointer;
+}
+
+.button_primary:hover
+{
+    background-color: #2342C0;
+}
+
+
+.button_secondary:hover
+{
+    background-color: #5028C6;
+}
+.button_alternate:hover 
+{   border: 1px solid #212429;
+    
+}
+
+.button_primary_disabled:disabled
+{
+  cursor: not-allowed;
+  background-color: #4263EB;
+    color: #ffffff;
+    border-color: #4263EB;
+  opacity: 50%;
+  
+}
+
+.button_secondary_disabled:disabled
+{
+  cursor: not-allowed;
+  background-color: #7048E8;
+    color: #ffffff;
+    border-color: #7048E8;
+  opacity: 50%;
+  
+}
+
+.button_alternate_disabled:disabled
+{ 
+  cursor: not-allowed;
+  background-color: #ffffff;
+  color: #495057;
+  border-color: #ACB5BD;
+  opacity: 50%;
+  
+}
+
+
