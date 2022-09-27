@@ -13,27 +13,27 @@
 }
 
 .button_primary
-{
-    background-color: #4263EB;
+{   
+    background-color: var(--primary);
     color: #ffffff;
-    border-color: #4263EB;
+    border-color: var(--primary);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
      
 }
 
 .button_secondary
-{
-    background-color: #7048E8;
+{   
+    background-color: var(--secondary);
     color: #ffffff;
-    border-color: #7048E8;
+    border-color: var(--secondary);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button_alternate
-{   border: 1px solid #ACB5BD;
+{   border: 1px solid var(--alternate);
     background-color: #ffffff;
     color: #495057;
-    border-color: #ACB5BD;
+    border-color: var(--alternate);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
@@ -45,8 +45,8 @@
 }
 
 .button_primary:hover
-{
-    background-color: #2342C0;
+{   
+    background-color: #374FC7;
     
 }
 
@@ -63,9 +63,9 @@
 .button_primary_disabled:disabled
 {
   cursor: not-allowed;
-  background-color: #4263EB;
+  background-color: var(--primary);
     color: #ffffff;
-    border-color: #4263EB;
+    border-color: var(--primary);
   opacity: 50%;
   
 }
@@ -73,9 +73,9 @@
 .button_secondary_disabled:disabled
 {
   cursor: not-allowed;
-  background-color: #7048E8;
+  background-color: var(--secondary);
     color: #ffffff;
-    border-color: #7048E8;
+    border-color: var(--secondary);
   opacity: 50%;
   
 }
@@ -85,9 +85,8 @@
   cursor: not-allowed;
   background-color: #ffffff;
   color: #495057;
-  border-color: #ACB5BD;
+  border-color: var(--alternate);
   opacity: 50%;
   
 }
-
 
