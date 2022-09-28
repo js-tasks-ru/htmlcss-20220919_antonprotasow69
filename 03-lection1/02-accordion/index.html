@@ -6,13 +6,25 @@
         <link rel="stylesheet" href="./accordion.css">
     </head>
     <body>
-        <details>
-            <summary>
-                Accordion item
+        <div class="accordion">
+        <details open>
+            <summary class="accordion__summary accordion__item accordion__marker ">
+                Accordion item 1
             </summary>
-            <p>
+            <p class="accordion_content">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+        </details>
+        </div>
+        <div class="accordion">
+        <details >
+            <summary class="accordion__summary accordion__item ">
+                Accordion item 2
+            </summary>
+            <p class=" accordion_content">
                 Hidden content
             </p>
         </details>
+    </div>
     </body>
 </html>
