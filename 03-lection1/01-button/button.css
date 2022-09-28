@@ -1,5 +1,7 @@
 .button
-{   border: 1px ;
+{   display: flex;
+  flex-basis: 10%;
+  border: 1px ;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -8,10 +10,14 @@
     text-align: center;
   box-sizing:border-box;
   height: 48px;
-  display: inline-block;
+  
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0.5em;
   border-radius: 8px;
   transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
   cursor: pointer;
+  
   
 }
 
