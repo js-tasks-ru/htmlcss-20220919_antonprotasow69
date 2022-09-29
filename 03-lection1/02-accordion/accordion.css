@@ -1,17 +1,13 @@
+
 .accordion {
-    box-sizing:border-box;
     font-size:16px;
-    width: 730px;
-    
-    padding-left: 32px;
-    padding-top: 24px;
-    padding-right: 48px;
+    display:flex;
+    max-width: 730px;
     
     vertical-align: top;
     text-align:left;
     border: 1px solid #ACB5BD;
     border-radius: 8px;
-    
     margin-bottom: 8px;
     
 }
@@ -22,11 +18,22 @@
     display: none;
 }
 .accordion__summary {
+    padding-left: 32px;
+    padding-top: 24px;
+    padding-right: 48.69px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
     display: flex;
+    
     justify-content: space-between; 
     list-style: none;
+    
 }
 .accordion__item {
+    flex-basis: 10%;
     margin-bottom: 24px;
  }
  
@@ -35,8 +42,14 @@
  }
  
  .accordion_content {
+    
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
      line-height: 24px;
-     margin-bottom: 32px;
+     padding: 0 48px 32px 32px;
      color: #495057;
  }
 .accordion__item_marker {
