@@ -3,7 +3,6 @@
     font-size:16px;
     display:flex;
     max-width: 730px;
-    
     vertical-align: top;
     text-align:left;
     border: 1px solid #ACB5BD;
@@ -26,14 +25,13 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-   
-    
+    display:flex;
     justify-content: space-between; 
     list-style: none;
     
 }
 .accordion__item {
-    flex-basis: 10%;
+    
     margin-bottom: 24px;
  }
  
@@ -42,7 +40,7 @@ line-height: 24px;
  }
  
  .accordion_content {
-    justify-content: space-between; 
+    
     font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -61,8 +59,7 @@ line-height: 24px;
 
   details[open] .accordion__item_marker {
 
-    transform: rotate(180deg);
-    
+    transform: rotate(180deg); 
 }
 
 
