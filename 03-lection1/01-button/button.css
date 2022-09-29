@@ -23,14 +23,14 @@
 }
 
 .button_primary
-{   margin: 0.5em;
+{   
     background-color: var(--primary);
     color: #ffffff;
     border-color: var(--primary);
 }
 
 .button_secondary
-{ margin: 0.5em;  
+{  
   padding-left: 4rem;
   padding-right: 4rem;
     background-color: var(--secondary);
@@ -40,7 +40,7 @@
 }
 
 .button_alternate
-{ margin: 0.5em;  
+{ 
   border: 1px solid var(--alternate);
     background-color: #ffffff;
     color: #495057;
