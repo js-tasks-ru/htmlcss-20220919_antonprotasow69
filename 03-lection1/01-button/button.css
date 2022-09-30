@@ -31,8 +31,7 @@
 
 .button_secondary
 {  
-  padding-left: 4rem;
-  padding-right: 4rem;
+  
     background-color: var(--secondary);
     color: #ffffff;
     border-color: var(--secondary);
