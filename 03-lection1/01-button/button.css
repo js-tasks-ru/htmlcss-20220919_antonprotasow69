@@ -1,15 +1,25 @@
 .button
-{   border: 1px ;
+{   display: inline-flex;
+  border: 1px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-  width: 189px;
+  box-sizing:border-box;
+  
   height: 48px;
-  display: inline;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+   
   border-radius: 8px;
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+  cursor: pointer;
+  
+  
 }
 
 .button_primary
@@ -17,77 +27,45 @@
     background-color: var(--primary);
     color: #ffffff;
     border-color: var(--primary);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
-     
 }
 
 .button_secondary
-{   
+{  
+  
     background-color: var(--secondary);
     color: #ffffff;
     border-color: var(--secondary);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    
 }
 
 .button_alternate
-{   border: 1px solid var(--alternate);
+{ 
+  border: 1px solid var(--alternate);
     background-color: #ffffff;
     color: #495057;
-    border-color: var(--alternate);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
-}
-
-.button:hover
-{
-  
-  cursor: pointer;
-  
+    border-color: var(--alternate); 
 }
 
 .button_primary:hover
 {   
-    background-color: #374FC7;
-    
+  background-color: #374FC7; 
 }
-
 
 .button_secondary:hover
 {
-    background-color: #5028C6;
+   background-color: #5028C6;
 }
+
 .button_alternate:hover 
-{   border: 1px solid #212429;
-    
+{  
+   border: 1px solid #212429;  
 }
 
-.button_primary_disabled:disabled
-{
-  cursor: not-allowed;
-  background-color: var(--primary);
-    color: #ffffff;
-    border-color: var(--primary);
-  opacity: 50%;
-  
-}
-
-.button_secondary_disabled:disabled
-{
-  cursor: not-allowed;
-  background-color: var(--secondary);
-    color: #ffffff;
-    border-color: var(--secondary);
-  opacity: 50%;
-  
-}
-
-.button_alternate_disabled:disabled
+.button:disabled
 { 
-  cursor: not-allowed;
-  background-color: #ffffff;
-  color: #495057;
-  border-color: var(--alternate);
+  pointer-events: none;
   opacity: 50%;
-  
 }
+
 
 

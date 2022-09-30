@@ -1,53 +1,58 @@
-.accordion {
-    box-sizing:border-box;
+
+
+.accordion__item {box-sizing: border-box ;
     font-size:16px;
-    width: 730px;
-    
-    padding-left: 32px;
-    padding-top: 24px;
-    padding-right: 48px;
-    
     vertical-align: top;
     text-align:left;
     border: 1px solid #ACB5BD;
     border-radius: 8px;
+    padding-left: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 48.69px;
+    cursor:pointer;
     
-    margin-bottom: 8px;
-    display:flex;
+ }
+.accordion__item[open] {
+    padding-bottom: 32px;
+    
 }
-.accordion:hover {
-    cursor: pointer;
+.accordion__item:last-child {
+    margin-bottom: 0;
 }
 .accordion__summary::-webkit-details-marker { 
     display: none;
 }
 .accordion__summary {
-    display: flex;
-    justify-content: space-between; 
     list-style: none;
+    font-family: Inter;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+display:flex;
+justify-content:space-between;
+    
 }
-.accordion__item {
-    margin-bottom: 24px;
- }
- 
- .accordion__item:last-child {
+
+ .accordion__content {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+     line-height: 24px;
+     color: #495057;
      margin-bottom: 0;
  }
- 
- .accordion_content {
-     line-height: 24px;
-     margin-bottom: 32px;
-     color: #495057;
- }
-.accordion__item_marker {
+.accordion__marker {
     
    padding-left: 0.5em;
    padding-right: 0.5em;
    
   }
 
-  details[open] .accordion__item_marker {
-
+.accordion__item[open] .accordion__marker {
     transform: rotate(180deg);
     
 }
