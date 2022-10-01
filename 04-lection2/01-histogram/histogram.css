@@ -3,12 +3,11 @@
     background-color: #FFFFFF;
     border: 1px solid #ACB5BD;
     border-radius: 8px;
+      
+}
     
-    
-    }
-    
-    .histogram__block {
-        font-style: normal;
+.histogram__block {
+     font-style: normal;
     font-weight: 400;
     font-size: 16px;
         padding-left: 24px;
@@ -18,47 +17,48 @@
         justify-content: space-between;
         margin: 0;
     
-    }
+}
     
-    .histogram__block_link {
+.histogram__block_link {
         font-family: Inter;
         height: 26px;
         margin: 0;
        padding-top: 19px;
        color: #4263EB;
        text-decoration: none;
-    }
+}
     
-    .histogram__block_order {
-        font-family: Inter;
-        height: 26px;
-      margin: 0;
-      padding-top: 16px;
-    }
+.histogram__block_order {
+    font-family: Inter;
+    height: 26px;
+    margin: 0;
+    padding-top: 16px;
+}
     
-    .histogram__count {
-        font-family: Inter;
-        font-size: 20px;
-        height: 26px;
-        margin: 0;
-        padding-left: 24px;
-        padding-top: 6px;
-        color: #212429
-    }
+.histogram__count {
+    font-family: Inter;
+    font-size: 20px;
+    height: 26px;
+    margin: 0;
+    padding-left: 24px;
+    padding-top: 6px;
+    color: #212429
+}
     
-    .histogram__chart {
-        padding-left:26px; 
-        padding-top: 39px;
-        padding-bottom: 24px;
-        display:flex;
-        flex-direction: flex-start; 
-        align-items: flex-end;
-        gap: 1px;
-        height: 50px;
-    }
-    .histogram__chart_column {
+.histogram__chart {
+
+    padding-left:26px; 
+    padding-top: 39px;
+    padding-bottom: 24px;
+    display:flex;
+    flex-direction: flex-start; 
+    align-items: flex-end;
+     gap: 1px;
+    height: 50px;
+}
+.histogram__chart_column {
         
-        width: 9px;
-        background-color: #4263EB;
-        padding-top: 
-    }
+    width: 9px;
+    background-color: #4263EB;
+    padding-top: 
+}
