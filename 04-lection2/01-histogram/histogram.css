@@ -3,7 +3,7 @@
     background-color: #FFFFFF;
     border: 1px solid #ACB5BD;
     border-radius: 8px;
-      
+    
 }
     
 .histogram__block {
@@ -12,7 +12,6 @@
     font-size: 16px;
         padding-left: 24px;
         padding-right: 24px;
-        
         display:flex;
         justify-content: space-between;
         margin: 0;
@@ -47,9 +46,7 @@
     
 .histogram__chart {
 
-    padding-left:26px; 
-    padding-top: 39px;
-    padding-bottom: 24px;
+    padding: 39px 29px 24px 26px;
     display:flex;
     flex-direction: flex-start; 
     align-items: flex-end;
@@ -60,5 +57,5 @@
         
     width: 9px;
     background-color: #4263EB;
-    padding-top: 
+    
 }
