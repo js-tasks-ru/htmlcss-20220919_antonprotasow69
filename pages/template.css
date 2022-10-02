@@ -16,11 +16,11 @@
 }
 
 .page__main {
-    
+    height:100%;
     width: 100%;
     grid-area: main;
     display:grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 450px 1fr;
 }
 
 .page__footer {
