@@ -3,31 +3,32 @@
     border: 1px solid #ACB5BD;
     border-radius: 8px;
     box-sizing: border-box;
-    
-    
+    padding-left: 24px;
+    padding-right: 40px;
+    padding-bottom: 32px;
+    padding-top: 24px;
 }
 .skeleton__top {
     flex-direction: row;
-   display:flex;
+    display:flex;
     
 }
 .skeleton__top-lines {
-    width: 515px;
+    flex-grow:1;
     gap: 8px;
     display:flex;
     flex-direction:column;
-    
-    margin-top: 32px;
+    margin-top: 8px;
     margin-left: 16px;
 }
 
 .skeleton__circle {
-    margin-left: 24px ;
+    
    width: 64px;
    height: 64px;
    border-radius: 50%;
    background-color: #DDE2E5;
-   margin-top: 24px;
+   
    flex-shrink: 0;
 }
 
@@ -37,27 +38,28 @@
 }
 
 .skeleton__bottom-lines {
-    width: 515px;
-    padding-left: 24px;
-    padding-right: 40px;
+    flex-grow:1;
+    
+    
     display:flex;
     flex-direction:column;
     margin-top: 24px;
-    margin-bottom: 32px;
+    
     gap: 8px;
 }
 .skeleton__line {
-    width: 100%;
+    
+    width: 26%;
     height: 20px;
     background-image: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
 .skeleton__line_medium {
-    width: 50%;
+    width: 13%;
     
 }
 
 .skeleton__line_small {
-    width: 33%;
+    width: 9%;
    
 }
