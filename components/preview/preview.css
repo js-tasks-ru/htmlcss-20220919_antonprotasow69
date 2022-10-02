@@ -1,5 +1,13 @@
 .preview {
-
-    height: 400px;
+    box-sizing: border-box;
+    height: 1036px;
     background: #F9FAFC;
+}
+
+.preview__cards {
+    padding-top: 68px;
+    display:flex;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
