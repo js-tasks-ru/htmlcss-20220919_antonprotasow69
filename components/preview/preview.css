@@ -1,5 +1,5 @@
 .preview {
-
-    height: 400px;
+   
+    min-height:calc(100vh - 200px);
     background: #F9FAFC;
 }
