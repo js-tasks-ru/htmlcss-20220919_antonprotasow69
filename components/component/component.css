@@ -1,5 +1,5 @@
 .component {
-    background-color: #FFFFFF;
+    background-color: var(--white);
     display:flex;
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
 border-radius: 12px;
