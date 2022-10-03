@@ -11,8 +11,6 @@ font-style: normal;
 font-weight: 600;
 font-size: 20px;
 line-height: 24px;
-/* identical to box height, or 120% */
-
 display: flex;
 align-items: flex-end;
 justify-content: center;
@@ -37,4 +35,38 @@ color: #334D6E;
     display:flex;
     justify-content: center;
     align-items: center;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: #334D6E;
+
+}
+.calendar__item_day {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+display: flex;
+align-items: flex-end;
+text-align: center;
+
+/* #90A0B7 */
+
+color: #90A0B7;
+}
+
+.calendar__item_marked {
+    background-color: #4263EB;
+    color: #FFFFFF;
+}
+
+.calendar__item_between {
+    background: #A0B1F5;
+    opacity: 0,2;
 }
