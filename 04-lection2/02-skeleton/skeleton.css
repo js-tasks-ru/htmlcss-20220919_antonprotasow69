@@ -39,27 +39,24 @@
 
 .skeleton__bottom-lines {
     flex-grow:1;
-    
-    
     display:flex;
     flex-direction:column;
     margin-top: 24px;
-    
     gap: 8px;
 }
 .skeleton__line {
     
-    width: 26%;
+    width: 100%;
     height: 20px;
     background-image: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
 .skeleton__line_medium {
-    width: 13%;
+    width: 50%;
     
 }
 
 .skeleton__line_small {
-    width: 9%;
+    width: 33%;
    
 }
