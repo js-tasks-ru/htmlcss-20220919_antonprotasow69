@@ -1,27 +1,15 @@
-.footer {
-
-    height: 200px;
-   
-
-}
-
-.footer__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 38px;
-    line-height: 48px;
-    color: #212429;
-    text-align: center;
+.page__footer {
+    display:flex;
+    height: 130px;
+    grid-area:footer;
+   justify-content:center;
+    align-items: center;
     
+      
 }
+.page__footer_background {
+  background-color: #F9FAFC;
 
-.footer__text {
-
-    text-align: center;
-    color:#212429;
-    
-   
 }
 
 .footer__inscription {

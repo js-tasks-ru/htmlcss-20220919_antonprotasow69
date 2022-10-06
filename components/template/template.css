@@ -9,17 +9,6 @@
                         "footer";
 }
 
-.page__header {
-    height: 82px;
-    grid-area: header;
-    padding: 0;
-}
-
-.page__header_background {
-  background-color: var(--white);
-
-}
-
 .page__main {
     margin-top: 36px;
     grid-area: main;
@@ -30,18 +19,6 @@
 }
 
 
-.page__footer {
-    display:flex;
-    height: 130px;
-    grid-area:footer;
-   justify-content:center;
-    align-items: center;
-    
-      
-}
-.page__footer_background {
-  background-color: #F9FAFC;
 
-}
 
 
