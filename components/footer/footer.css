@@ -1,3 +1,27 @@
+.footer {
+
+  height: 200px;
+ 
+}
+
+.footer__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 48px;
+  color: #212429;
+  text-align: center;
+  
+}
+
+.footer__text {
+
+  text-align: center;
+  color:#212429;
+  
+ 
+}
 .page__footer {
     display:flex;
     height: 130px;
@@ -7,7 +31,7 @@
     
       
 }
-.page__footer_background {
+.footer_bg_transparent {
   background-color: #F9FAFC;
 
 }
@@ -25,4 +49,3 @@
     color: var(--grey-3);
   
 }
-    
