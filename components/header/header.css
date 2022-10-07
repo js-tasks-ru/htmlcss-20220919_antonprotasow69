@@ -8,17 +8,14 @@
   /* identical to box height, or 128% */
   color: #212429;
   margin: 0;
-  
+  padding-bottom: 77px;
 }
 
 .header__logo {
+  padding-top: 24px;
   padding-bottom: 40px;
 }
-.page__header {
-    height: 82px;
-    grid-area: header;
-    padding: 0;
-}
+
 
 .header_bg_transparent {
   background-color: var(--white);

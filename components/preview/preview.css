@@ -2,14 +2,14 @@
 
     background: #F9FAFC;
 }
-.preview__border_top {
+.preview__border-top {
 
 height: 1px;
 background-color: rgba(221, 226, 229, 1);
 
 }
 
-.preview__border_bottom {
+.preview__border-bottom {
  height: 1px;
  background-color: rgba(221, 226, 229, 1);
 

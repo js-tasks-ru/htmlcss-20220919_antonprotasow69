@@ -8,6 +8,7 @@
   text-align: center;
   margin: 0;
   padding-bottom: 32px;
+  padding-top: 76px;
 }
 
 .footer__text {
@@ -21,18 +22,10 @@ text-align: center;
   margin: 0;
   color:#212429;
   height:96px;
-  
+  padding-bottom: 136px;
   
 }
-.page__footer {
-    display:flex;
-    height: 130px;
-    grid-area:footer;
-   justify-content:center;
-    align-items: center;
-    
-      
-}
+
 .footer_bg_transparent {
   background-color: #F9FAFC;
 
