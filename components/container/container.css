@@ -17,3 +17,13 @@
   padding-bottom: 136px;
   
 }
+
+
+@media (max-width:575.98px) {
+  
+  .container_header {
+  
+    padding-top: 16px;
+    padding-bottom: 69px;
+  }
+}

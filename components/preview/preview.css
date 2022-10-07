@@ -24,3 +24,18 @@ background-color: rgba(221, 226, 229, 1);
     flex-wrap: wrap;
 }
 
+@media (max-width:575.98px) {
+
+    .preview__cards {
+        padding-top: 23px; 
+        padding-left: 16px;
+        padding-right: 15px;
+        gap: 16px;
+        display:flex;
+        
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+}
