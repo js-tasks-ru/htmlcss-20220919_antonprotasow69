@@ -2,3 +2,18 @@
   max-width: 1110px;
   margin: 0 auto;
 }
+
+
+.container_header {
+  
+  padding-top: 24px;
+  padding-bottom: 77px;
+}
+
+
+.container_footer{
+  box-sizing: border-box;
+  padding-top: 76px;
+  padding-bottom: 136px;
+  
+}

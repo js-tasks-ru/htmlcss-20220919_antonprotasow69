@@ -1,13 +1,26 @@
 .preview {
-   
-    min-height:calc(100vh - 200px);
+
     background: #F9FAFC;
+}
+.preview__border_top {
+
+height: 1px;
+background-color: rgba(221, 226, 229, 1);
+
+}
+
+.preview__border_bottom {
+ height: 1px;
+ background-color: rgba(221, 226, 229, 1);
+
 }
 
 .preview__cards {
     padding-top: 68px;
+    padding-bottom: 204px;
     display:flex;
     gap: 30px;
     flex-direction: row;
     flex-wrap: wrap;
 }
+

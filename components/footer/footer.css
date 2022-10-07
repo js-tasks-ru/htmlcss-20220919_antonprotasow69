@@ -1,9 +1,3 @@
-.footer {
-
-  height: 200px;
- 
-}
-
 .footer__title {
   font-family: 'Inter';
   font-style: normal;
@@ -12,15 +6,23 @@
   line-height: 48px;
   color: #212429;
   text-align: center;
-  
+  margin: 0;
+  padding-bottom: 32px;
 }
 
 .footer__text {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
 
-  text-align: center;
+text-align: center;
+  margin: 0;
   color:#212429;
+  height:96px;
   
- 
+  
 }
 .page__footer {
     display:flex;
