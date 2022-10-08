@@ -62,3 +62,34 @@
     background-color: #4263EB;
     
 }
+
+@media (max-width:575.98px) {
+    
+    .histogram_adaptive {
+        padding: 8px 12px 12px;
+
+    }
+    .block_adaptive {
+        font-size: 8px;
+        padding-right: 12px;
+    }
+    .count_adaptive {
+        font-size: 10px;
+        height: 16px;
+    }
+
+    .link_adaptive {
+        font-size: 8px;
+        line-height: 16px;
+        margin-top: 1.5px;
+    }
+
+    .count_adaptive {
+        height: 13px;
+    }
+    .chart_adaptive {
+        margin-top: 19px;
+        height: 25px;
+    }
+    
+}
