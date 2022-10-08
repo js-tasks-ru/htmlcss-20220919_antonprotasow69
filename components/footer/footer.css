@@ -1,3 +1,7 @@
+.footer_color {
+  background-color: var(--white);
+}
+
 .footer__title {
   font-family: 'Inter';
   font-style: normal;

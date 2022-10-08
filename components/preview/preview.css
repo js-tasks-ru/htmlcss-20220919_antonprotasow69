@@ -28,14 +28,8 @@ background-color: rgba(221, 226, 229, 1);
 
     .preview__cards {
         padding-top: 23px; 
-        padding-left: 16px;
+        padding-left: 15px;
         padding-right: 15px;
         gap: 16px;
-        display:flex;
-        
-        
-        flex-direction: row;
-        flex-wrap: wrap;
-
     }
 }

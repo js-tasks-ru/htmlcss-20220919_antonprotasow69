@@ -1,3 +1,6 @@
+.header_color {
+  background-color: var(--white);
+}
 .header__title {
   
   font-family: 'Inter';
