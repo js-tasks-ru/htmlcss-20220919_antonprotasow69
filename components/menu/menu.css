@@ -33,3 +33,9 @@
 .menu__box:nth-last-child(1) {
     padding-top: 26px;
 }
+
+@media (max-width:575.98px) {
+    .menu {
+        display:none;
+    }
+}
