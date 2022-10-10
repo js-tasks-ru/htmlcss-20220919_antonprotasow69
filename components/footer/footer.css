@@ -1,3 +1,11 @@
+.footer__second-page {
+    display:flex;
+    height: 130px;
+    grid-area:footer;
+   justify-content:center;
+    align-items: center;
+}
+
 .footer_color {
   background-color: var(--white);
 }
@@ -48,3 +56,4 @@ text-align: center;
     color: var(--grey-3);
   
 }
+
