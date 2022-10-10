@@ -45,9 +45,11 @@
   .header__logo {
     text-align: center;
     padding-bottom: 48px;
+    padding-top: 16px;
   }
   .header__title {
     padding-left: 16px;
+    padding-bottom: 69px;
     font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
