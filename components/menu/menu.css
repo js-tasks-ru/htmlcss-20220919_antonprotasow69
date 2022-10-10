@@ -1,0 +1,41 @@
+.menu {
+    width:229px;
+    
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+    flex:none;
+    flex-grow: 0;
+    
+}
+.menu__title {
+    height: 26px;
+    font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 26px;
+   padding-bottom: 12px;
+   color: #000000;
+   margin:0;
+}
+.menu__box {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+       color: #212429;
+   text-decoration: none;
+   
+}
+
+.menu__box:nth-last-child(1) {
+    padding-top: 26px;
+}
+
+@media (max-width:575.98px) {
+    .menu {
+        display:none;
+    }
+}

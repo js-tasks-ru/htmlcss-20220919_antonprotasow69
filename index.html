@@ -2,38 +2,96 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> 
+        <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
     </head>
     <body>
      <div class="page">
-        <header class="header">
-             <div class="container">
+        <header class="header header_color">
+         
+             <div class="container container_header">
+            <div class="header__logo">  <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_18343_447)">
+            <rect y="1" width="30" height="30" fill="#212429"/>
+            <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+            <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_18343_447">
+            <rect width="110" height="32" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg></div>
                 <h1 class="header__title"> Reusable component library </h1>
              </div>
             
         </header>
-        </div>
+      
      <main class="preview">
+      
       <div class="container">
           <div  class="preview__cards">
             <div class="card"></div>    
             <div class="card"></div> 
             <div class="card"></div> 
             <div class="card"></div>     
-            <div class="card"></div>   
+            <div class="card card_histogram"><div class="histogram histogram_adaptive">
+               <div class="histogram__block block_adaptive">
+                  <p class="histogram__order order_adaptive">Total orders</p>
+                  <a class="histogram__link link_adaptive" href="">View all</a>
+               </div>
+                <p class="histogram__count count_adaptive">50254</p>
+                <div class="histogram__chart chart_adaptive">
+                  <div style="height: 100%" class="histogram__column"></div>
+                  <div style="height: 54%" class="histogram__column"></div>
+                  <div style="height: 36%" class="histogram__column"></div>
+                  <div style="height: 72%" class="histogram__column"></div>
+                  <div style="height: 22%" class="histogram__column"></div>
+                  <div style="height: 15%" class="histogram__column"></div>
+                  <div style="height: 35%" class="histogram__column"></div>
+                  <div style="height: 48%" class="histogram__column"></div>
+                  <div style="height: 29%" class="histogram__column"></div>
+                  <div style="height: 77%" class="histogram__column"></div>
+                  <div style="height: 65%" class="histogram__column"></div>
+                  <div style="height: 87%" class="histogram__column"></div>
+                  <div style="height: 97%" class="histogram__column"></div>
+                  <div style="height: 11%" class="histogram__column"></div>
+                  <div style="height: 4%" class="histogram__column"></div>
+                  <div style="height: 62%" class="histogram__column"></div>
+                  <div style="height: 31%" class="histogram__column"></div>
+                  <div style="height: 45%" class="histogram__column"></div>
+                  <div style="height: 56%" class="histogram__column"></div>
+                  <div style="height: 88%" class="histogram__column"></div>
+                  <div style="height: 19%" class="histogram__column"></div>
+                  <div style="height: 13%" class="histogram__column"></div>
+                  <div style="height: 27%" class="histogram__column"></div>
+                  <div style="height: 33%" class="histogram__column"></div>
+                  <div style="height: 44%" class="histogram__column"></div>
+                  <div style="height: 91%" class="histogram__column"></div>
+                  <div style="height: 68%" class="histogram__column"></div>
+                  <div style="height: 62%" class="histogram__column"></div>
+                  <div style="height: 37%" class="histogram__column"></div>
+                  <div style="height: 21%" class="histogram__column"></div>
+                </div>
+             </div>
+            <p class="card__text">Histogram</p>
+            </div>   
             <div class="card"></div>       
          </div>
-      
       </div>
+      
      </main>
-     <footer class="footer">
+     <footer class="footer footer_color">
+       <div class="container container_footer ">
         <h2 class="footer__title">About </h2>
-        <p class="footer__text">This project is a collection of professionally designed, pre-built, fully responsive</p>
-        <p class="footer__text">HTML snippets you can drop into your projects. Get started by checking out our free</p>
-        <p class="footer__text">preview components, or browsing the PNG previews in the categories you're most</p>
-        <p class="footer__text">curious about.</p>
+        <p class="footer__text">This project is a collection of professionally designed, pre-built, fully responsive
+        HTML snippets you can drop into your projects. Get started by checking out our free
+        preview components, or browsing the PNG previews in the categories you're most
+        curious about.</p>
+      </div>
      </footer>
-     
+     </div>
     </body>
 </html>

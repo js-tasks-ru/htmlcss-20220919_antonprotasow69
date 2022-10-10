@@ -1,13 +1,25 @@
 .preview {
-    box-sizing: border-box;
-    height: 1036px;
+    border-top: 1px solid rgba(221, 226, 229, 1);
+    border-bottom: 1px solid rgba(221, 226, 229, 1);
     background: #F9FAFC;
 }
 
 .preview__cards {
     padding-top: 68px;
+    padding-bottom: 204px;
     display:flex;
     gap: 30px;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+@media (max-width:575.98px) {
+
+    .preview__cards {
+        padding-top: 23px; 
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 16px;
+    }
+
 }

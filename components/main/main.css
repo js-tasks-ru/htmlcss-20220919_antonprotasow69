@@ -1,0 +1,22 @@
+.main__second-page{
+    margin-top: 36px;
+    grid-area: main;
+    display:grid;
+    grid-template-columns: auto 1fr;
+    min-height: calc(100vh - 130px);
+    margin-left: 165px;
+    margin-right: 165px;
+}
+
+@media (max-width: 575.98px) {
+    
+    .main__second-page {
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+
