@@ -5,7 +5,7 @@
     
 }
 
-@media (max-width: 400px) {
+@media (min-width: 400px)  {
     .background-picture {
         
         background-image: url(../02-background-image/public/forest_400.jpg);
@@ -14,7 +14,8 @@
     
 }
 
-@media (min-width: 400px) and (max-width: 768px) {
+
+@media (min-width: 768px)  {
     .background-picture {
         
         background-image: url(../02-background-image/public/forest_768.jpg);
@@ -23,8 +24,7 @@
     
 }
 
-
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1024px) {
     .background-picture {
         
         background-image: url(../02-background-image/public/forest_1024.jpg);
@@ -33,7 +33,7 @@
     
 }
 
-@media (min-width: 1024px) and (max-width: 2560px) {
+@media (min-width: 2560px) {
     .background-picture {
         
         background-image: url(../02-background-image/public/forest_2560.jpg);
