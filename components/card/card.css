@@ -10,6 +10,7 @@
    box-sizing: border-box;
    padding: 32px 25px 25px 25px;
    
+   
 }
 
 .card__text {
@@ -25,6 +26,15 @@
      padding-top: 75px;
     }
 
+.card_tooltip {
+   justify-content: center;
+   align-items: center;
+}
+
+.card_calendar {
+    padding: 0;
+}
+
 @media (max-width:575.98px) {
 
     .card {
@@ -32,7 +42,7 @@
         height: 210px;
         width: 164px;
        padding: 23px 12px 12px 12px;
-       gap: 15px;
+       
     }
     
     .card__text {

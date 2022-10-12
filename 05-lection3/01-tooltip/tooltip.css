@@ -28,6 +28,10 @@ transform: translateX(-50%);
 display:none;
 }
 
+.tooltip__helper_display {
+  display:block;
+}
+
 .tooltip__helper:before {
     
     content: "";
@@ -44,3 +48,4 @@ display:none;
 .tooltip__trigger:hover ~ .tooltip__helper {
   display: block;
 }
+
