@@ -118,3 +118,33 @@ flex-shrink: 0;
 .modal__xmark_display {
     display: none;
 }
+
+
+@media (max-width:575.98px) {
+    .modal_display {
+        padding-left: 0px;
+        padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    }
+
+    .modal__container {
+        border-radius: 0px;
+
+ padding: 10px 13px 11px 13px;
+    }
+
+    .modal__title {
+        font-weight: 300;
+font-size: 10px;
+line-height: 16px;
+padding-bottom: 4px;
+    }
+
+    .modal__text {
+        font-weight: 300;
+        font-size: 6px;
+        line-height: 12px;
+
+    }
+}
