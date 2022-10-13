@@ -72,15 +72,14 @@ color: #90A0B7;
     opacity: 0.2;
 }
 
-.item_adaptive {
+.calendar__item_resize {
     
     font-size: 12px;
 }
 
-.item_day_adaptive {
+.calendar__item_day_resize {
 
     font-size: 8px;
-    
     
 }
 
