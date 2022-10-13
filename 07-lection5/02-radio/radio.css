@@ -1,5 +1,6 @@
 .radio {
-
+ display:inline-block;
+ position: relative;
 }
 
 .radio__input {
@@ -42,7 +43,7 @@ color: #495057;
 }
 
 .radio__icon {
-    content: " ";
+    
     width: 18px;
     height: 18px;
     border-radius: 50%;
