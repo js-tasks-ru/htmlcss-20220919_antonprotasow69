@@ -75,7 +75,7 @@
     }
     .count_adaptive {
         font-size: 8px;
-        height: 16px;
+        height: 13px;
     }
 
     .link_adaptive {
@@ -84,9 +84,7 @@
         margin-top: 1px;
     }
 
-    .count_adaptive {
-        height: 13px;
-    }
+  
     .chart_adaptive {
         margin-top: 13px;
         height: 25px;
