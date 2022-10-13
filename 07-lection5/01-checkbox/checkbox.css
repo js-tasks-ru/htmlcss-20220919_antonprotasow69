@@ -1,8 +1,8 @@
 .checkbox {
-   
-   display: block;
+   padding-top: 10px;
+   display: inline-block;
    position: relative;
-   padding-bottom: 16px;
+   
    box-sizing: border-box;
 }
 
