@@ -3,7 +3,7 @@
    
     height: 367px;
     width: 350px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
    border-radius: 12px;
    display:flex;
@@ -24,7 +24,7 @@
     line-height: 25px;
     margin: 0;
     text-align: center;
-    color: #212429;
+    color: var(--black);
      display:inline-flex;
      white-space: nowrap;
      position:absolute;
@@ -41,7 +41,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 19px;
 text-align: center;
-color: #495057;
+color: var(--grey-4);
 margin: 0;
 flex-grow: 1;
 align-items: flex-end;
