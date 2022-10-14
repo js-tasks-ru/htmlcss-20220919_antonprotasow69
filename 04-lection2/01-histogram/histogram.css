@@ -1,4 +1,6 @@
 .histogram {
+    pointer-events: none;
+    display:block;
     box-sizing: border-box;
     background-color: #FFFFFF;
     border: 1px solid #ACB5BD;
@@ -11,7 +13,7 @@
      font-style: normal;
     font-weight: 400;
     font-size: 16px;        
-        
+  
         display:flex;
         justify-content: space-between;
         margin: 0;
@@ -28,12 +30,19 @@
        color: #4263EB;
        text-decoration: none;
        margin-top: 3px;
+       
 }
     
 .histogram__order {
     font-family: Inter;
     margin: 0;
-    
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+opacity: 0.8;
+color: var(--black);
+
 }
     
 .histogram__count {
@@ -41,8 +50,8 @@
     font-size: 20px;
     height: 26px;
     margin: 0;
-    
-    padding-top: 3px;
+    box-sizing: border-box;
+    padding-top: 6px;
     color: #212429
 }
     
@@ -83,7 +92,13 @@
         line-height: 16px;
         margin-top: 1px;
     }
+    
+    .histogram__order {
+        
+   font-size: 8px;
+   line-height: 16px;
 
+    }
 
     .histogram__chart {
         margin-top: 13px;
