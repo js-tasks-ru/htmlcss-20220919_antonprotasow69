@@ -1,4 +1,5 @@
 .burger-menu {
+   
     position: fixed;
     left:0;
     top: 0;
@@ -14,6 +15,7 @@
 }
 
 .burger-open {
+    
     background: none;
     border: none;
     padding:0;
@@ -36,7 +38,13 @@
 
 
 
-@media (max-width:575.98px) {
+@media (min-width: 576px) {
+   .burger-menu {
+    display:none;
+   }
 
+   .burger-open {
+    display:none;
+   }
 
 }
