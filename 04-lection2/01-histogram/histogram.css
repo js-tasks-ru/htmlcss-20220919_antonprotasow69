@@ -67,7 +67,7 @@ color: var(--black);
 }
 .histogram__column {
         
-    flex-basis: 9px;
+    flex-basis: 100%;
     background-color: #4263EB;
     
 }

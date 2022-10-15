@@ -10,16 +10,18 @@
         <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
         <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
         <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
+        <link rel="stylesheet" href="/components/tabs/tabs.css">
     </head>
     <body>
      <div class="page">
         <header class="header header_color">
          
              <div class="container container_header">
-            <div class="header__logo">  <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="header__logo">  
+            <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_18343_447)">
-            <rect y="1" width="30" height="30" fill="#212429"/>
-            <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+              <rect y="1" width="30" height="30" fill="#212429"/>
+              <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
             <path d="M78 0L110 32H78V0Z" fill="#212429"/>
             </g>
             <defs>
@@ -30,12 +32,50 @@
             </svg></div>
                 <h1 class="header__title"> Reusable component library </h1>
              </div>
-            
+            <nav class="container"> 
+               <div class="tabs">
+                  <div class="tabs__scroller">
+                     <label class="tabs__radio"  for="#all-tab"> 
+                     <input type="radio" id="#all-tab" name="tabs" class="tabs_input" checked>
+                        <div class="tabs__title"> All components</div>
+                        <div class="tabs_icon"> </div>
+                     </label>
+
+                     <label class="tabs__radio" for="#elem-tab" >
+                        <input type="radio" id="#elem-tab" name="tabs" class="tabs_input">
+                        <div class="tabs__title">Elements</div>
+                        <div class="tabs_icon"> </div>
+                        
+                     </label>
+
+                     <label class="tabs__radio" for="#containers-tab" >
+                        <input type="radio" id="#containers-tab" name="tabs" class="tabs_input">
+                        <div class="tabs__title">Containers</div>
+                        <div class="tabs_icon"> </div>
+                     
+                      </label>
+                  </div>
+
+                  
+                  
+                  
+                  
+                  <div class="tabs__content tabs__content_elements">
+                      <!-- элементы --> 
+                  </div>
+                  <div class="tabs__content tabs__content_containers">
+                     <!-- контейнеры --> 
+                 </div>
+              </div>
+    
+     </div> 
+     </nav>
         </header>
       
-     <main class="preview">
-      
-      <div class="container">
+   <main class="preview">
+      <div class="tabs__content tabs__content_all">
+         <!-- все компоненты --> 
+       <div class="container">
           <div  class="preview__cards">
             <a href="" class="card "> 
                <div class="tooltip tooltip_resize tooltip__helper_visible">
@@ -178,8 +218,8 @@
             </a>       
          </div>
       </div>
-      
-     </main>
+      </div>
+   </main>
      <footer class="footer footer_color">
        <div class="container container_footer ">
         <h2 class="footer__title">About </h2>

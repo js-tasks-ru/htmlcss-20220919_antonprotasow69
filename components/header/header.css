@@ -1,4 +1,6 @@
-
+.header {
+  box-sizing: border-box;
+}
 
 .header_color {
   background-color: var(--white);
