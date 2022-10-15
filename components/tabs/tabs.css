@@ -1,0 +1,58 @@
+.tabs__radio {
+    position: relative;
+    cursor: pointer;
+  
+}
+
+.tabs__scroller {
+    /* p */
+display:flex;
+gap: 40px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+display: flex;
+align-items: center;
+
+color: var(--grey-3);
+
+}
+
+.tabs__title {
+  
+  padding-bottom: 8px;
+}
+
+.tabs_input {
+    position: absolute;
+    outline: none; 
+    clip:rect(0 0 0 0 );
+}
+
+.tabs_icon{
+    height: 5px;
+    background-color: var(--black);
+    
+    transform: scaleX(0);
+    transition: transform 200ms ease-in;
+}
+
+.tabs__radio:hover {
+    color: var(--black);
+}
+.tabs__radio:hover > .tabs_icon {
+    
+    transform: scale(1,1);
+}
+
+
+.tabs_input:checked ~ .tabs__title {
+    color: var(--black);
+}
+
+.tabs_input:checked ~ .tabs_icon {
+    transform: scale(1,1);
+    
+}
