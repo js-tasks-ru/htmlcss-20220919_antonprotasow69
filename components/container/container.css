@@ -1,6 +1,7 @@
 .container {
   max-width: 1110px;
   margin: 0 auto;
+  width:100%;
 }
 
 
@@ -9,3 +10,4 @@
     max-width:575.98px;
   }
 }
+

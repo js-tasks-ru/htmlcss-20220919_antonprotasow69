@@ -32,45 +32,48 @@
             </svg></div>
                 <h1 class="header__title"> Reusable component library </h1>
              </div>
-            <nav class="container"> 
-               <div class="tabs">
-                  <div class="tabs__scroller">
-                     <label class="tabs__radio"  for="#all-tab"> 
-                     <input type="radio" id="#all-tab" name="tabs" class="tabs_input" checked>
-                        <div class="tabs__title"> All components</div>
-                        <div class="tabs_icon"> </div>
-                     </label>
 
-                     <label class="tabs__radio" for="#elem-tab" >
-                        <input type="radio" id="#elem-tab" name="tabs" class="tabs_input">
-                        <div class="tabs__title">Elements</div>
-                        <div class="tabs_icon"> </div>
-                        
-                     </label>
-
-                     <label class="tabs__radio" for="#containers-tab" >
-                        <input type="radio" id="#containers-tab" name="tabs" class="tabs_input">
-                        <div class="tabs__title">Containers</div>
-                        <div class="tabs_icon"> </div>
-                     
-                      </label>
-                  </div>
-
-                  
-                  
-                  
-                  
-                  <div class="tabs__content tabs__content_elements">
-                      <!-- элементы --> 
-                  </div>
-                  <div class="tabs__content tabs__content_containers">
-                     <!-- контейнеры --> 
-                 </div>
-              </div>
-    
-     </div> 
-     </nav>
         </header>
+        <div class="tabs">
+          
+           <input type="radio" id="all-tab" name="tabs" class="tabs_input" checked>
+           <input type="radio" id="atom-tab" name="tabs" class="tabs_input">
+           <input type="radio" id="molecules-tab" name="tabs" class="tabs_input">
+           <input type="radio" id="organisms-tab" name="tabs" class="tabs_input">
+       <nav class="container"> 
+         <div class="tabs__scroller">
+            <label class="tabs__radio"  for="all-tab"> 
+               <div class="tabs__title"> All components</div>
+               <div class="tabs_icon"> </div>
+            </label>
+
+            <label class="tabs__radio" for="atom-tab" >
+               <div class="tabs__title">Atoms</div>
+               <div class="tabs_icon"> </div>
+               
+            </label>
+
+            <label class="tabs__radio" for="molecules-tab" >
+               <div class="tabs__title">Molecules</div>
+               <div class="tabs_icon"> </div>
+            
+             </label>
+             <label class="tabs__radio" for="organisms-tab" >
+               <div class="tabs__title">Organisms</div>
+               <div class="tabs_icon"> </div>
+            
+             </label>
+         </div>
+       </nav>
+         <div class="tabs__content tabs__content_atom">
+             <!-- элементы --> 
+         </div>
+         <div class="tabs__content tabs__content_molecules">
+            <!-- контейнеры --> 
+        </div>
+        <div class="tabs__content tabs__content_organisms">
+         <!-- контейнеры --> 
+        </div>
       
    <main class="preview">
       <div class="tabs__content tabs__content_all">
@@ -216,10 +219,20 @@
                <div class="card__title">Avatar</div>
               <p class="card__text">Element</p>
             </a>       
-         </div>
+          </div>
+        </div>
       </div>
-      </div>
-   </main>
+      <div class="tabs__content tabs__content_atom">
+         <div class="container"> - элементы </div>
+     </div>
+     <div class="tabs__content tabs__content_molecules">
+         контейнеры --> 
+    </div>
+    <div class="tabs__content tabs__content_organisms">
+     шаблоны 
+    </div>
+    </main>
+   </div>  
      <footer class="footer footer_color">
        <div class="container container_footer ">
         <h2 class="footer__title">About </h2>
@@ -229,6 +242,6 @@
         curious about.</p>
       </div>
      </footer>
-     </div>
-    </body>
+   </div>
+   </body>
 </html>

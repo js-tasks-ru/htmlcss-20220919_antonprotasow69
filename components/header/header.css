@@ -15,7 +15,7 @@
   /* identical to box height, or 128% */
   color: var(--black);
   margin: 0;
-  padding-bottom: 77px;
+  padding-bottom: 40px;
 }
 
 .header__logo {
@@ -48,6 +48,7 @@
     text-align: center;
     padding-bottom: 48px;
     padding-top: 16px;
+    
   }
   .header__title {
     padding-left: 16px;
@@ -58,6 +59,7 @@ font-weight: 400;
 font-size: 28px;
 line-height: 38px;
 color: var(--grey-4);
+padding-right: 71px;
   }
 
   .header__second-page {
