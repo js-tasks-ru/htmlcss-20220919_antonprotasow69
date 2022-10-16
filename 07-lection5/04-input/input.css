@@ -4,7 +4,7 @@
     position: relative;
     display: inline-flex;
     box-sizing: border-box;
-    background-image: url("data:image/svg+xml, ../../assets/images/icons-sprite.svg#check-circle");
+    
 }
 
 .input__text {
@@ -31,7 +31,7 @@ background-image: url("data:image/svg+xml,../../assets/images/icons-sprite.svg#c
 
 
 
-.input__text_filled{
+.input__text_filled (вставить в другое место){
 
 font-family: 'Inter';
 font-style: normal;
@@ -51,11 +51,11 @@ line-height: 26px;
 color: #DDE2E5;
 
 }
-.input__text_success {
+.input_success {
     border: 1px solid var(--blue-2);
     box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
 }
-.input__text_invalid {
+.input_invalid {
     border: 1px solid var(--red);
     box-shadow: 0px 1px 1px rgba(240, 61, 62, 0.1);
 }
