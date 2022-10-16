@@ -1,6 +1,6 @@
 .skeleton {
-    background-color: #FFFFFF;
-    border: 1px solid #ACB5BD;
+    background-color: transparent;
+    border: 1px solid var(--grey-3);
     border-radius: 8px;
     box-sizing: border-box;
     padding-left: 24px;
@@ -8,6 +8,10 @@
     padding-bottom: 32px;
     padding-top: 24px;
 }
+.skeleton_tabs-resize {
+    max-width: 50%;
+}
+
 .skeleton__top {
     flex-direction: row;
     display:flex;
@@ -27,7 +31,7 @@
    width: 64px;
    height: 64px;
    border-radius: 50%;
-   background-color: #DDE2E5;
+   background-color: var(--grey-2);
    
    flex-shrink: 0;
 }
