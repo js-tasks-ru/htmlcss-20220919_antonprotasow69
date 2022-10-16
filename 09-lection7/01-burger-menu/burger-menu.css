@@ -14,16 +14,9 @@
     transform:translateX(0);
 }
 
-.burger-open {
-    
-    background: none;
-    border: none;
-    padding:0;
-    width: 24px;
-    height: 24px;
-}
 
-.burger-close {
+
+.burger-menu__burger-close {
    border:none;
    background: var(--grey-2);
    padding:0;
@@ -43,8 +36,6 @@
     display:none;
    }
 
-   .burger-open {
-    display:none;
-   }
+   
 
 }
