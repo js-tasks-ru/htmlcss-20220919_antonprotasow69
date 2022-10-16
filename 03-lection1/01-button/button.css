@@ -22,10 +22,11 @@
   
 }
 
+
 .button_primary
 {   
     background-color: var(--primary);
-    color: #ffffff;
+    color: var(--white);
     border-color: var(--primary);
 }
 
@@ -33,7 +34,7 @@
 {  
   
     background-color: var(--secondary);
-    color: #ffffff;
+    color: var(--white);
     border-color: var(--secondary);
     
 }
@@ -41,9 +42,19 @@
 .button_alternate
 { 
   border: 1px solid var(--alternate);
-    background-color: #ffffff;
-    color: #495057;
+    background-color: var(--white);
+    color: var(--grey-4);
     border-color: var(--alternate); 
+}
+
+.button_container {
+  display:inline-grid;
+  white-space: nowrap;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap:30px;
+  padding: 0;
+  height: auto;
 }
 
 .button_primary:hover
@@ -61,10 +72,10 @@
    border: 1px solid #212429;  
 }
 
-.button:disabled
-{ 
+.button:disabled { 
   pointer-events: none;
   opacity: 50%;
+  
 }
 
 

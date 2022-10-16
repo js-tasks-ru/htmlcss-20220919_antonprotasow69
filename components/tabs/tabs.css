@@ -1,0 +1,96 @@
+.tabs {
+   width: 100%;
+   margin: 0;
+
+    background-color: white;
+}
+
+.tabs__radio {
+    position: relative;
+    cursor: pointer;
+  
+}
+
+.tabs__scroller {
+    /* p */
+display:flex;
+gap: 40px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+display: flex;
+align-items: center;
+background-color: var(--white);
+color: var(--grey-3);
+
+}
+
+.tabs__title {
+  
+  padding-bottom: 8px;
+}
+
+.tabs_input {
+    position: absolute;
+    outline: none; 
+    clip:rect(0 0 0 0 );
+}
+
+.tabs_icon{
+    height: 5px;
+    background-color: var(--black);
+    
+    transform: scaleX(0);
+    transition: transform 200ms ease-in;
+}
+
+.tabs__content {
+    display:none;
+}
+
+.tabs__content_title {
+    
+    margin-top: 62px;
+    margin-bottom: 32px;
+    color: var(--grey-3);
+    text-transform:uppercase;
+    
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 38px;
+}
+
+#all-tab:checked ~ main .tabs__content_all,
+#atom-tab:checked ~ main .tabs__content_atom,
+#molecules-tab:checked ~ main .tabs__content_molecules,
+#organisms-tab:checked ~ main .tabs__content_organisms {
+
+    display:block;
+}
+
+.tabs__radio:hover {
+    color: var(--black);
+}
+.tabs__radio:hover > .tabs_icon {
+    
+    transform: scale(1,1);
+}
+
+#all-tab:checked ~ .container .tabs__scroller label[for="all-tab"] .tabs__title,
+#atom-tab:checked ~ .container .tabs__scroller label[for="atom-tab"] .tabs__title,
+#molecules-tab:checked ~ .container .tabs__scroller label[for="molecules-tab"] .tabs__title,
+#organisms-tab:checked ~ .container .tabs__scroller label[for="organisms-tab"] .tabs__title
+ {
+    color: var(--black);
+}
+
+#all-tab:checked ~ .container .tabs__scroller label[for="all-tab"] .tabs_icon,
+#atom-tab:checked ~ .container .tabs__scroller label[for="atom-tab"] .tabs_icon,
+#molecules-tab:checked ~ .container .tabs__scroller label[for="molecules-tab"] .tabs_icon,
+#organisms-tab:checked ~ .container .tabs__scroller label[for="organisms-tab"] .tabs_icon {
+    transform: scale(1,1);
+    
+}

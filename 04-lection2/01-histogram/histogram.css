@@ -1,9 +1,11 @@
 .histogram {
+    pointer-events: none;
+    display:block;
     box-sizing: border-box;
     background-color: #FFFFFF;
     border: 1px solid #ACB5BD;
     border-radius: 8px;
-    
+    width: 100%;
     padding: 16px 24px 24px;
 }
     
@@ -11,7 +13,7 @@
      font-style: normal;
     font-weight: 400;
     font-size: 16px;        
-        padding-right: 24px;
+  
         display:flex;
         justify-content: space-between;
         margin: 0;
@@ -28,12 +30,19 @@
        color: #4263EB;
        text-decoration: none;
        margin-top: 3px;
+       
 }
     
 .histogram__order {
     font-family: Inter;
     margin: 0;
-    
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+opacity: 0.8;
+color: var(--black);
+
 }
     
 .histogram__count {
@@ -41,8 +50,8 @@
     font-size: 20px;
     height: 26px;
     margin: 0;
-    
-    padding-top: 3px;
+    box-sizing: border-box;
+    padding-top: 6px;
     color: #212429
 }
     
@@ -58,36 +67,40 @@
 }
 .histogram__column {
         
-    flex-basis: 9px;
+    flex-basis: 100%;
     background-color: #4263EB;
     
 }
 
 @media (max-width:575.98px) {
     
-    .histogram_adaptive {
+    .histogram {
         padding: 6px 8px 8px;
-
+        margin-top: 34px;
     }
-    .block_adaptive {
+    .histogram__block {
         font-size: 8px;
         padding-right: 8px;
     }
-    .count_adaptive {
+    .histogram__count{
         font-size: 8px;
-        height: 16px;
+        height: 13px;
     }
 
-    .link_adaptive {
+    .histogram__link {
         font-size: 8px;
         line-height: 16px;
         margin-top: 1px;
     }
+    
+    .histogram__order {
+        
+   font-size: 8px;
+   line-height: 16px;
 
-    .count_adaptive {
-        height: 13px;
     }
-    .chart_adaptive {
+
+    .histogram__chart {
         margin-top: 13px;
         height: 25px;
     }
