@@ -13,6 +13,11 @@
     flex-wrap: wrap;
 }
 
+.preview__cards_tabs {
+     
+     padding-bottom: 0px;
+}
+
 @media (max-width:575.98px) {
 
     .preview__cards {

@@ -50,6 +50,19 @@ color: var(--grey-3);
     display:none;
 }
 
+.tabs__content_title {
+    
+    margin-top: 62px;
+    margin-bottom: 32px;
+    color: var(--grey-3);
+    text-transform:uppercase;
+    
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 38px;
+}
+
 #all-tab:checked ~ main .tabs__content_all,
 #atom-tab:checked ~ main .tabs__content_atom,
 #molecules-tab:checked ~ main .tabs__content_molecules,

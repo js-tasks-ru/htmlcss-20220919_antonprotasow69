@@ -2,10 +2,14 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+       
       <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> 
+        <link rel="stylesheet" href="./03-lection1/01-button/button.css">
+        <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
         <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
+        <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
         <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
         <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
         <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
@@ -67,7 +71,9 @@
        </nav>
 
    <main class="preview">
+      
       <div class="tabs__content tabs__content_all">
+         
          <!-- все компоненты --> 
        <div class="container">
           <div  class="preview__cards">
@@ -142,10 +148,10 @@
               <p class="card__text">Molecule</p>
             </a> 
             <a href="" class="card"> 
-               <div class="modal modal_display" id="modal"> 
+               <div class="modal modal_display" > 
                   <div class="modal__container">
                      
-                     <div class="modal__xmark " id="modal-close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <div class="modal__xmark "><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4714 3.52861C12.7318 3.78896 12.7318 4.21107 12.4714 4.47141L4.47141 12.4714C4.21107 12.7318 3.78896 12.7318 3.52861 12.4714C3.26826 12.2111 3.26826 11.789 3.52861 11.5286L11.5286 3.52861C11.789 3.26826 12.2111 3.26826 12.4714 3.52861Z" fill="#495057"/>
                          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52861 3.52861C3.78896 3.26826 4.21107 3.26826 4.47141 3.52861L12.4714 11.5286C12.7318 11.789 12.7318 12.2111 12.4714 12.4714C12.2111 12.7318 11.789 12.7318 11.5286 12.4714L3.52861 4.47141C3.26826 4.21107 3.26826 3.78896 3.52861 3.52861Z" fill="#495057"/>
                          </svg>
@@ -212,10 +218,12 @@
             </a>       
           </div>
         </div>
+        
       </div>
       <div class="tabs__content tabs__content_atom">
+         
          <div class="container">
-            <div  class="preview__cards">
+            <div  class="preview__cards preview__cards_tabs">
               <a href="" class="card "> 
                  <div class="tooltip tooltip_resize tooltip__helper_visible">
                     <div class="tooltip__trigger"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -230,21 +238,36 @@
                 <p class="card__text">Atom</p>
               </a>    
                   
-              <a href="" class="card">
+               <a href="" class="card">
                  <div class="avatar">
                     <img src="https://s3-alpha-sig.figma.com/img/5f97/eb43/1bd4dd6069428f64473bd4e633b7c00b?Expires=1665964800&Signature=Ugh9DpRIBAdb7Ft1cjFuD97nYAaL8oiJs-UYSHchwbCdUhD-woGD2P6LawKpRn0V8A2YCNMxGqEGg5PjMGWmEbZRF0p65p7l1HFkVtzFlW6zR-Yw3JLHqE72cjGqU7Vw0YEkA~jAHaP4HBc0MEoUbM15M1aeZht2OeoyCgvXTo0YMZw5dF6zPvKFMrnw57dVutEYzpSc~fb~12XvXe1D9iu8FS1nXsWRF7svp4M3zJn7peGuE7pAfQFu4nOPYkI7cBF2MRmi-qm2A03LZT~Zh~VNs3AUaT6WcZWdPDV83ETEirraFcfjIZG4-gYxbOFZEEUFCbtRugrrnPe1SYDLiA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="avatar" class="avatar__img">
                    </div>
                  <div class="card__title">Avatar</div>
                 <p class="card__text">Atom</p>
-              </a>       
-            </div>
+               </a>       
+             </div>
+
+           </div>
+          <div class="container"> 
+            <p class="tabs__content_title">Buttons</p>
+              <div class="button button_container">
+               <button class="button button_primary ">Primary</button>
+               <button class="button button_secondary">Secondary</button>
+               <button class="button button_alternate" >Alternate</button>
+               <button class="button button_primary" disabled>Primary disabled </button>
+               <button class="button button_secondary"   disabled>Secondary disabled </button>
+               <button class="button button_alternate " disabled >Alternate disabled</button>
+               </div>
           </div>
-          
-              
+          <div class="container"> 
+            <p class="tabs__content_title" >Custom form elements</p>
+           
+           
+          </div>
      </div>
      <div class="tabs__content tabs__content_molecules">
       <div class="container">
-         <div  class="preview__cards">
+         <div  class="preview__cards preview__cards_tabs">
              
            <a href="" class="card">
               <div class="card__title">Custom form elements</div>
@@ -303,19 +326,38 @@
              <p class="card__title">Calendar</p>
              <p class="card__text">Molecule</p>
            </a> 
-               
+          
          </div>
        </div>
+         <div class="container">
+        <p class="tabs__content_title" >Skeleton</p>
+        <div class="skeleton skeleton_tabs-resize">
+         <div class="skeleton__top">
+            <div class="skeleton__circle"></div>
+             <div class="skeleton__top-lines">
+                <div class="skeleton__line skeleton__line_small"> </div>
+                <div class="skeleton__line skeleton__line_medium"> </div>
+           </div>
+         </div>
+         <div class="skeleton__bottom">
+           <div class="skeleton__bottom-lines">
+             <div class="skeleton__line"> </div>
+            <div class="skeleton__line"> </div>
+           </div>
+         </div>
+       </div> 
+       <p class="tabs__content_title" >Custom form elements</p>
+         </div>
     </div>
     <div class="tabs__content tabs__content_organisms">
       <div class="container">
-         <div  class="preview__cards">
+         <div  class="preview__cards preview__cards_tabs">
            
            <a href="" class="card"> 
-              <div class="modal modal_display" id="modal"> 
+              <div  class="modal modal_display" > 
                  <div class="modal__container">
                     
-                    <div class="modal__xmark " id="modal-close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="modal__xmark " ><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4714 3.52861C12.7318 3.78896 12.7318 4.21107 12.4714 4.47141L4.47141 12.4714C4.21107 12.7318 3.78896 12.7318 3.52861 12.4714C3.26826 12.2111 3.26826 11.789 3.52861 11.5286L11.5286 3.52861C11.789 3.26826 12.2111 3.26826 12.4714 3.52861Z" fill="#495057"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52861 3.52861C3.78896 3.26826 4.21107 3.26826 4.47141 3.52861L12.4714 11.5286C12.7318 11.789 12.7318 12.2111 12.4714 12.4714C12.2111 12.7318 11.789 12.7318 11.5286 12.4714L3.52861 4.47141C3.26826 4.21107 3.26826 3.78896 3.52861 3.52861Z" fill="#495057"/>
                         </svg>
@@ -376,6 +418,30 @@
                
          </div>
        </div>
+          <div class="container">
+          <p class="tabs__content_title" >Modal</p>
+          <button id="modal-open" class="button button_primary" >Open modal</button>
+    
+          <div class="modal" id="modal"> 
+            <div class="modal__container">
+               
+               <div class="modal__xmark" id="modal-close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4714 3.52861C12.7318 3.78896 12.7318 4.21107 12.4714 4.47141L4.47141 12.4714C4.21107 12.7318 3.78896 12.7318 3.52861 12.4714C3.26826 12.2111 3.26826 11.789 3.52861 11.5286L11.5286 3.52861C11.789 3.26826 12.2111 3.26826 12.4714 3.52861Z" fill="#495057"/>
+                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52861 3.52861C3.78896 3.26826 4.21107 3.26826 4.47141 3.52861L12.4714 11.5286C12.7318 11.789 12.7318 12.2111 12.4714 12.4714C12.2111 12.7318 11.789 12.7318 11.5286 12.4714L3.52861 4.47141C3.26826 4.21107 3.26826 3.78896 3.52861 3.52861Z" fill="#495057"/>
+                   </svg>
+                </div>       
+               <div class="container">
+               <div class="modal__title">Modal title</div>
+               <div class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+             </div>
+              
+             </div>
+             </div>
+          </div>
+          <div class="container">
+          <p class="tabs__content_title" >Accordion</p>
+         </div>
     </div>
     </main>
    </div>  
@@ -390,4 +456,5 @@
      </footer>
    </div>
    </body>
+   <script src="./05-lection3/02-modal/modal.js"></script>
 </html>
