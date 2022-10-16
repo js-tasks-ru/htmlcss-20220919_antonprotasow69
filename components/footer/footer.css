@@ -16,11 +16,11 @@
   font-weight: 500;
   font-size: 38px;
   line-height: 48px;
-  color: #212429;
+  color: var(--black);
   text-align: center;
   margin: 0;
   padding-bottom: 32px;
-  padding-top: 76px;
+  padding-top: 71px;
 }
 
 .footer__text {
@@ -32,7 +32,7 @@ line-height: 24px;
 
 text-align: center;
   margin: 0;
-  color:#212429;
+  color:var(--black);
   height:96px;
   padding-bottom: 136px;
   
@@ -56,4 +56,5 @@ text-align: center;
     color: var(--grey-3);
   
 }
+
 

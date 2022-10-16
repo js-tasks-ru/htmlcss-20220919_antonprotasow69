@@ -49,3 +49,7 @@ display:none;
   display: block;
 }
 
+.tooltip_resize {
+   position: absolute;
+   top:50%;
+}

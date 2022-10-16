@@ -19,7 +19,7 @@ font-size: 28px;
 line-height: 38px;
 box-sizing: border-box;
 padding-bottom: 24px;
-color: #495057;
+color: var(--grey-4);
 }
 
 @media (max-width:575.98px) {

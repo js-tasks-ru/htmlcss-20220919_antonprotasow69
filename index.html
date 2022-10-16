@@ -2,22 +2,30 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+       
       <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> 
+        <link rel="stylesheet" href="./03-lection1/01-button/button.css">
+        <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
         <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
+        <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
         <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
         <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
+        <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
+        <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
+        <link rel="stylesheet" href="./components/tabs/tabs.css">
     </head>
     <body>
      <div class="page">
         <header class="header header_color">
          
              <div class="container container_header">
-            <div class="header__logo">  <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="header__logo">  
+            <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_18343_447)">
-            <rect y="1" width="30" height="30" fill="#212429"/>
-            <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+              <rect y="1" width="30" height="30" fill="#212429"/>
+              <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
             <path d="M78 0L110 32H78V0Z" fill="#212429"/>
             </g>
             <defs>
@@ -28,15 +36,49 @@
             </svg></div>
                 <h1 class="header__title"> Reusable component library </h1>
              </div>
-            
+
         </header>
+        <div class="tabs">
+          
+           <input type="radio" id="all-tab" name="tabs" class="tabs_input" checked>
+           <input type="radio" id="atom-tab" name="tabs" class="tabs_input">
+           <input type="radio" id="molecules-tab" name="tabs" class="tabs_input">
+           <input type="radio" id="organisms-tab" name="tabs" class="tabs_input">
+       <nav class="container"> 
+         <div class="tabs__scroller">
+            <label class="tabs__radio"  for="all-tab"> 
+               <div class="tabs__title"> All components</div>
+               <div class="tabs_icon"> </div>
+            </label>
+
+            <label class="tabs__radio" for="atom-tab" >
+               <div class="tabs__title">Atoms</div>
+               <div class="tabs_icon"> </div>
+               
+            </label>
+
+            <label class="tabs__radio" for="molecules-tab" >
+               <div class="tabs__title">Molecules</div>
+               <div class="tabs_icon"> </div>
+            
+             </label>
+             <label class="tabs__radio" for="organisms-tab" >
+               <div class="tabs__title">Organisms</div>
+               <div class="tabs_icon"> </div>
+            
+             </label>
+         </div>
+       </nav>
+
+   <main class="preview">
       
-     <main class="preview">
-      
-      <div class="container">
+      <div class="tabs__content tabs__content_all">
+         
+         <!-- все компоненты --> 
+       <div class="container">
           <div  class="preview__cards">
-            <div class="card card_tooltip"> 
-               <div class="tooltip tooltip__helper_visible">
+            <a href="" class="card "> 
+               <div class="tooltip tooltip_resize tooltip__helper_visible">
                   <div class="tooltip__trigger"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z" fill="#212429"/>
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2582 8.02431C11.7927 7.94446 11.314 8.03194 10.9068 8.27126C10.4996 8.51057 10.1902 8.88628 10.0335 9.33184C9.85018 9.85282 9.27926 10.1266 8.75827 9.94333C8.23728 9.76005 7.96351 9.18914 8.14678 8.66815C8.46025 7.77704 9.07898 7.02562 9.89339 6.54699C10.7078 6.06836 11.6653 5.8934 12.5964 6.0531C13.5274 6.2128 14.3719 6.69685 14.9802 7.41952C15.5884 8.14204 15.9214 9.05647 15.9201 10.0009C15.9197 11.5313 14.7851 12.5419 13.9748 13.082C13.5392 13.3725 13.1107 13.586 12.795 13.7263C12.6358 13.7971 12.5016 13.8508 12.405 13.8876C12.3566 13.906 12.3174 13.9203 12.2888 13.9305L12.2541 13.9427L12.243 13.9464L12.2391 13.9477L12.2376 13.9483C12.2373 13.9484 12.2363 13.9487 11.9201 13L12.2363 13.9487C11.7124 14.1233 11.1461 13.8402 10.9714 13.3162C10.7969 12.7926 11.0796 12.2267 11.6028 12.0517L11.6016 12.0521C11.6017 12.0521 11.6018 12.052 11.6028 12.0517L11.6188 12.0461C11.6342 12.0406 11.6594 12.0314 11.693 12.0186C11.7605 11.9929 11.8607 11.9529 11.9827 11.8987C12.2296 11.789 12.551 11.6275 12.8654 11.4179C13.555 10.9582 13.9201 10.4691 13.9201 9.99999L13.9201 9.9985C13.9208 9.52618 13.7543 9.06886 13.4502 8.70752C13.146 8.34618 12.7238 8.10416 12.2582 8.02431Z" fill="#212429"/>
@@ -45,67 +87,93 @@
                   </div>
                   <div class="tooltip__helper tooltip__helper_display">Helper text</div>
               </div> 
-            </div>    
-            <div class="card"></div> 
-            <div class="card card_calendar">
-             <div class="calendar">
+              <div class="card__title">Tooltip</div>
+              <p class="card__text">Atom</p>
+            </a>    
+            <a href="" class="card">
+               <div class="card__title">Custom form elements</div>
+              <p class="card__text">Molecules</p>
+            </a> 
+            <a href="" class="card">
+             <div class=" calendar calendar_resize">
                <div class="calendar__title">October 2020</div>
                   <div class="calendar__wrapper">
                    <div class="calendar__inner">
-                    <div class="calendar__item calendar__item_day">Mon</div>
-                    <div class="calendar__item calendar__item_day">Tue</div>
-                    <div class="calendar__item calendar__item_day">Wed</div>
-                    <div class="calendar__item calendar__item_day">Thu</div>
-                    <div class="calendar__item calendar__item_day">Fri</div>
-                    <div class="calendar__item calendar__item_day">Sat</div>
-                    <div class="calendar__item calendar__item_day">Sun</div>
-                    <div class="calendar__item"></div>
-                    <div class="calendar__item"></div>
-                    <div class="calendar__item"></div>
-                    <div class="calendar__item"></div>
-                    <div class="calendar__item">1</div>
-                    <div class="calendar__item">2</div>
-                    <div class="calendar__item">3</div>
-                    <div class="calendar__item">4</div>
-                    <div class="calendar__item">5</div>
-                    <div class="calendar__item">6</div>
-                    <div class="calendar__item">7</div>
-                    <div class="calendar__item">8</div>
-                    <div class="calendar__item">9</div>
-                    <div class="calendar__item">10</div>
-                    <div class="calendar__item">11</div>
-                    <div class="calendar__item">12</div>
-                    <div class="calendar__item">13</div>
-                    <div class="calendar__item">14</div>
-                    <div class="calendar__item">15</div>
-                    <div class="calendar__item">16</div>
-                    <div class="calendar__item">17</div>
-                    <div class="calendar__item calendar__item_marked">18</div>
-                    <div class="calendar__item calendar__item_between">19</div>
-                    <div class="calendar__item calendar__item_between">20</div>
-                    <div class="calendar__item calendar__item_between">21</div>
-                    <div class="calendar__item calendar__item_between">22</div>
-                    <div class="calendar__item calendar__item_marked">23</div>
-                    <div class="calendar__item">24</div>
-                    <div class="calendar__item">25</div>
-                    <div class="calendar__item">26</div>
-                    <div class="calendar__item">27</div>
-                    <div class="calendar__item">28</div>
-                    <div class="calendar__item">29</div>
-                    <div class="calendar__item">30</div>
-                    <div class="calendar__item">31</div>
+                    <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Mon</div>
+                    <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Tue</div>
+                    <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Wed</div>
+                    <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Thu</div>
+                    <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Fri</div>
+                    <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Sat</div>
+                    <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Sun</div>
+                    <div class="calendar__item calendar__item_resize"></div>
+                    <div class="calendar__item calendar__item_resize"></div>
+                    <div class="calendar__item calendar__item_resize"></div>
+                    <div class="calendar__item calendar__item_resize"></div>
+                    <div class="calendar__item calendar__item_resize">1</div>
+                    <div class="calendar__item calendar__item_resize">2</div>
+                    <div class="calendar__item calendar__item_resize">3</div>
+                    <div class="calendar__item calendar__item_resize">4</div>
+                    <div class="calendar__item calendar__item_resize">5</div>
+                    <div class="calendar__item calendar__item_resize">6</div>
+                    <div class="calendar__item calendar__item_resize">7</div>
+                    <div class="calendar__item calendar__item_resize">8</div>
+                    <div class="calendar__item calendar__item_resize">9</div>
+                    <div class="calendar__item calendar__item_resize">10</div>
+                    <div class="calendar__item calendar__item_resize">11</div>
+                    <div class="calendar__item calendar__item_resize">12</div>
+                    <div class="calendar__item calendar__item_resize">13</div>
+                    <div class="calendar__item calendar__item_resize">14</div>
+                    <div class="calendar__item calendar__item_resize">15</div>
+                    <div class="calendar__item calendar__item_resize">16</div>
+                    <div class="calendar__item calendar__item_resize">17</div>
+                    <div class="calendar__item calendar__item_resize calendar__item_marked ">18</div>
+                    <div class="calendar__item calendar__item_resize calendar__item_between ">19</div>
+                    <div class="calendar__item calendar__item_resize calendar__item_between">20</div>
+                    <div class="calendar__item calendar__item_resize calendar__item_between">21</div>
+                    <div class="calendar__item calendar__item_resize calendar__item_between">22</div>
+                    <div class="calendar__item calendar__item_resize calendar__item_marked ">23</div>
+                    <div class="calendar__item calendar__item_resize">24</div>
+                    <div class="calendar__item calendar__item_resize">25</div>
+                    <div class="calendar__item calendar__item_resize">26</div>
+                    <div class="calendar__item calendar__item_resize">27</div>
+                    <div class="calendar__item calendar__item_resize">28</div>
+                    <div class="calendar__item calendar__item_resize">29</div>
+                    <div class="calendar__item calendar__item_resize">30</div>
+                    <div class="calendar__item calendar__item_resize">31</div>
                    </div>
                </div>
               </div> 
-            </div> 
-            <div class="card"></div>     
-            <div class="card card_histogram"><div class="histogram histogram_adaptive">
-               <div class="histogram__block block_adaptive">
-                  <p class="histogram__order order_adaptive">Total orders</p>
-                  <a class="histogram__link link_adaptive" href="">View all</a>
+              <p class="card__title">Calendar</p>
+              <p class="card__text">Molecule</p>
+            </a> 
+            <a href="" class="card"> 
+               <div class="modal modal_display" > 
+                  <div class="modal__container">
+                     
+                     <div class="modal__xmark "><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4714 3.52861C12.7318 3.78896 12.7318 4.21107 12.4714 4.47141L4.47141 12.4714C4.21107 12.7318 3.78896 12.7318 3.52861 12.4714C3.26826 12.2111 3.26826 11.789 3.52861 11.5286L11.5286 3.52861C11.789 3.26826 12.2111 3.26826 12.4714 3.52861Z" fill="#495057"/>
+                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52861 3.52861C3.78896 3.26826 4.21107 3.26826 4.47141 3.52861L12.4714 11.5286C12.7318 11.789 12.7318 12.2111 12.4714 12.4714C12.2111 12.7318 11.789 12.7318 11.5286 12.4714L3.52861 4.47141C3.26826 4.21107 3.26826 3.78896 3.52861 3.52861Z" fill="#495057"/>
+                         </svg>
+                      </div>       
+                     <div class="container">
+                     <div class="modal__title ">Modal title</div>
+                     <div class="modal__text ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                   </div>
+                   </div>
                </div>
-                <p class="histogram__count count_adaptive">50254</p>
-                <div class="histogram__chart chart_adaptive">
+              <div class="card__title">Modal dialog</div>
+              <p class="card__text">Organism</p>
+            </a>     
+            <a href="" class="card" >
+               <div class="histogram ">
+               <div class="histogram__block ">
+                  <p class="histogram__order ">Total orders</p>
+                  <span class="histogram__link">View all</span>
+               </div>
+                <p class="histogram__count ">50254</p>
+                <div class="histogram__chart">
                   <div style="height: 100%" class="histogram__column"></div>
                   <div style="height: 54%" class="histogram__column"></div>
                   <div style="height: 36%" class="histogram__column"></div>
@@ -138,13 +206,245 @@
                   <div style="height: 21%" class="histogram__column"></div>
                 </div>
              </div>
-            <p class="card__text">Histogram</p>
-            </div>   
-            <div class="card"></div>       
-         </div>
+            <p class="card__title">Histogram</p>
+            <p class="card__text">Organism</p>
+           </a>   
+            <a href="" class="card">
+               <div class="avatar">
+                  <img src="https://s3-alpha-sig.figma.com/img/5f97/eb43/1bd4dd6069428f64473bd4e633b7c00b?Expires=1665964800&Signature=Ugh9DpRIBAdb7Ft1cjFuD97nYAaL8oiJs-UYSHchwbCdUhD-woGD2P6LawKpRn0V8A2YCNMxGqEGg5PjMGWmEbZRF0p65p7l1HFkVtzFlW6zR-Yw3JLHqE72cjGqU7Vw0YEkA~jAHaP4HBc0MEoUbM15M1aeZht2OeoyCgvXTo0YMZw5dF6zPvKFMrnw57dVutEYzpSc~fb~12XvXe1D9iu8FS1nXsWRF7svp4M3zJn7peGuE7pAfQFu4nOPYkI7cBF2MRmi-qm2A03LZT~Zh~VNs3AUaT6WcZWdPDV83ETEirraFcfjIZG4-gYxbOFZEEUFCbtRugrrnPe1SYDLiA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="avatar" class="avatar__img">
+                 </div>
+               <div class="card__title">Avatar</div>
+              <p class="card__text">Atom</p>
+            </a>       
+          </div>
+        </div>
+        
       </div>
-      
-     </main>
+      <div class="tabs__content tabs__content_atom">
+         
+         <div class="container">
+            <div  class="preview__cards preview__cards_tabs">
+              <a href="" class="card "> 
+                 <div class="tooltip tooltip_resize tooltip__helper_visible">
+                    <div class="tooltip__trigger"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z" fill="#212429"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2582 8.02431C11.7927 7.94446 11.314 8.03194 10.9068 8.27126C10.4996 8.51057 10.1902 8.88628 10.0335 9.33184C9.85018 9.85282 9.27926 10.1266 8.75827 9.94333C8.23728 9.76005 7.96351 9.18914 8.14678 8.66815C8.46025 7.77704 9.07898 7.02562 9.89339 6.54699C10.7078 6.06836 11.6653 5.8934 12.5964 6.0531C13.5274 6.2128 14.3719 6.69685 14.9802 7.41952C15.5884 8.14204 15.9214 9.05647 15.9201 10.0009C15.9197 11.5313 14.7851 12.5419 13.9748 13.082C13.5392 13.3725 13.1107 13.586 12.795 13.7263C12.6358 13.7971 12.5016 13.8508 12.405 13.8876C12.3566 13.906 12.3174 13.9203 12.2888 13.9305L12.2541 13.9427L12.243 13.9464L12.2391 13.9477L12.2376 13.9483C12.2373 13.9484 12.2363 13.9487 11.9201 13L12.2363 13.9487C11.7124 14.1233 11.1461 13.8402 10.9714 13.3162C10.7969 12.7926 11.0796 12.2267 11.6028 12.0517L11.6016 12.0521C11.6017 12.0521 11.6018 12.052 11.6028 12.0517L11.6188 12.0461C11.6342 12.0406 11.6594 12.0314 11.693 12.0186C11.7605 11.9929 11.8607 11.9529 11.9827 11.8987C12.2296 11.789 12.551 11.6275 12.8654 11.4179C13.555 10.9582 13.9201 10.4691 13.9201 9.99999L13.9201 9.9985C13.9208 9.52618 13.7543 9.06886 13.4502 8.70752C13.146 8.34618 12.7238 8.10416 12.2582 8.02431Z" fill="#212429"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z" fill="#212429"/>
+                        </svg>
+                    </div>
+                    <div class="tooltip__helper tooltip__helper_display">Helper text</div>
+                </div> 
+                <div class="card__title">Tooltip</div>
+                <p class="card__text">Atom</p>
+              </a>    
+                  
+               <a href="" class="card">
+                 <div class="avatar">
+                    <img src="https://s3-alpha-sig.figma.com/img/5f97/eb43/1bd4dd6069428f64473bd4e633b7c00b?Expires=1665964800&Signature=Ugh9DpRIBAdb7Ft1cjFuD97nYAaL8oiJs-UYSHchwbCdUhD-woGD2P6LawKpRn0V8A2YCNMxGqEGg5PjMGWmEbZRF0p65p7l1HFkVtzFlW6zR-Yw3JLHqE72cjGqU7Vw0YEkA~jAHaP4HBc0MEoUbM15M1aeZht2OeoyCgvXTo0YMZw5dF6zPvKFMrnw57dVutEYzpSc~fb~12XvXe1D9iu8FS1nXsWRF7svp4M3zJn7peGuE7pAfQFu4nOPYkI7cBF2MRmi-qm2A03LZT~Zh~VNs3AUaT6WcZWdPDV83ETEirraFcfjIZG4-gYxbOFZEEUFCbtRugrrnPe1SYDLiA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="avatar" class="avatar__img">
+                   </div>
+                 <div class="card__title">Avatar</div>
+                <p class="card__text">Atom</p>
+               </a>       
+             </div>
+
+           </div>
+          <div class="container"> 
+            <p class="tabs__content_title">Buttons</p>
+              <div class="button button_container">
+               <button class="button button_primary ">Primary</button>
+               <button class="button button_secondary">Secondary</button>
+               <button class="button button_alternate" >Alternate</button>
+               <button class="button button_primary" disabled>Primary disabled </button>
+               <button class="button button_secondary"   disabled>Secondary disabled </button>
+               <button class="button button_alternate " disabled >Alternate disabled</button>
+               </div>
+          </div>
+          <div class="container"> 
+            <p class="tabs__content_title" >Custom form elements</p>
+           
+           
+          </div>
+     </div>
+     <div class="tabs__content tabs__content_molecules">
+      <div class="container">
+         <div  class="preview__cards preview__cards_tabs">
+             
+           <a href="" class="card">
+              <div class="card__title">Custom form elements</div>
+             <p class="card__text">Molecules</p>
+           </a> 
+           <a href="" class="card">
+            <div class=" calendar calendar_resize">
+              <div class="calendar__title">October 2020</div>
+                 <div class="calendar__wrapper">
+                  <div class="calendar__inner">
+                   <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Mon</div>
+                   <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Tue</div>
+                   <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Wed</div>
+                   <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Thu</div>
+                   <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Fri</div>
+                   <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Sat</div>
+                   <div class="calendar__item calendar__item_day calendar__item_resize calendar__item_day_resize">Sun</div>
+                   <div class="calendar__item calendar__item_resize"></div>
+                   <div class="calendar__item calendar__item_resize"></div>
+                   <div class="calendar__item calendar__item_resize"></div>
+                   <div class="calendar__item calendar__item_resize"></div>
+                   <div class="calendar__item calendar__item_resize">1</div>
+                   <div class="calendar__item calendar__item_resize">2</div>
+                   <div class="calendar__item calendar__item_resize">3</div>
+                   <div class="calendar__item calendar__item_resize">4</div>
+                   <div class="calendar__item calendar__item_resize">5</div>
+                   <div class="calendar__item calendar__item_resize">6</div>
+                   <div class="calendar__item calendar__item_resize">7</div>
+                   <div class="calendar__item calendar__item_resize">8</div>
+                   <div class="calendar__item calendar__item_resize">9</div>
+                   <div class="calendar__item calendar__item_resize">10</div>
+                   <div class="calendar__item calendar__item_resize">11</div>
+                   <div class="calendar__item calendar__item_resize">12</div>
+                   <div class="calendar__item calendar__item_resize">13</div>
+                   <div class="calendar__item calendar__item_resize">14</div>
+                   <div class="calendar__item calendar__item_resize">15</div>
+                   <div class="calendar__item calendar__item_resize">16</div>
+                   <div class="calendar__item calendar__item_resize">17</div>
+                   <div class="calendar__item calendar__item_resize calendar__item_marked ">18</div>
+                   <div class="calendar__item calendar__item_resize calendar__item_between ">19</div>
+                   <div class="calendar__item calendar__item_resize calendar__item_between">20</div>
+                   <div class="calendar__item calendar__item_resize calendar__item_between">21</div>
+                   <div class="calendar__item calendar__item_resize calendar__item_between">22</div>
+                   <div class="calendar__item calendar__item_resize calendar__item_marked ">23</div>
+                   <div class="calendar__item calendar__item_resize">24</div>
+                   <div class="calendar__item calendar__item_resize">25</div>
+                   <div class="calendar__item calendar__item_resize">26</div>
+                   <div class="calendar__item calendar__item_resize">27</div>
+                   <div class="calendar__item calendar__item_resize">28</div>
+                   <div class="calendar__item calendar__item_resize">29</div>
+                   <div class="calendar__item calendar__item_resize">30</div>
+                   <div class="calendar__item calendar__item_resize">31</div>
+                  </div>
+              </div>
+             </div> 
+             <p class="card__title">Calendar</p>
+             <p class="card__text">Molecule</p>
+           </a> 
+          
+         </div>
+       </div>
+         <div class="container">
+        <p class="tabs__content_title" >Skeleton</p>
+        <div class="skeleton skeleton_tabs-resize">
+         <div class="skeleton__top">
+            <div class="skeleton__circle"></div>
+             <div class="skeleton__top-lines">
+                <div class="skeleton__line skeleton__line_small"> </div>
+                <div class="skeleton__line skeleton__line_medium"> </div>
+           </div>
+         </div>
+         <div class="skeleton__bottom">
+           <div class="skeleton__bottom-lines">
+             <div class="skeleton__line"> </div>
+            <div class="skeleton__line"> </div>
+           </div>
+         </div>
+       </div> 
+       <p class="tabs__content_title" >Custom form elements</p>
+         </div>
+    </div>
+    <div class="tabs__content tabs__content_organisms">
+      <div class="container">
+         <div  class="preview__cards preview__cards_tabs">
+           
+           <a href="" class="card"> 
+              <div  class="modal modal_display" > 
+                 <div class="modal__container">
+                    
+                    <div class="modal__xmark " ><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4714 3.52861C12.7318 3.78896 12.7318 4.21107 12.4714 4.47141L4.47141 12.4714C4.21107 12.7318 3.78896 12.7318 3.52861 12.4714C3.26826 12.2111 3.26826 11.789 3.52861 11.5286L11.5286 3.52861C11.789 3.26826 12.2111 3.26826 12.4714 3.52861Z" fill="#495057"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52861 3.52861C3.78896 3.26826 4.21107 3.26826 4.47141 3.52861L12.4714 11.5286C12.7318 11.789 12.7318 12.2111 12.4714 12.4714C12.2111 12.7318 11.789 12.7318 11.5286 12.4714L3.52861 4.47141C3.26826 4.21107 3.26826 3.78896 3.52861 3.52861Z" fill="#495057"/>
+                        </svg>
+                     </div>       
+                    <div class="container">
+                    <div class="modal__title ">Modal title</div>
+                    <div class="modal__text ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                  </div>
+                  </div>
+              </div>
+             <div class="card__title">Modal dialog</div>
+             <p class="card__text">Organism</p>
+           </a>     
+           <a href="" class="card" >
+              <div class="histogram ">
+              <div class="histogram__block ">
+                 <p class="histogram__order ">Total orders</p>
+                 <span class="histogram__link">View all</span>
+              </div>
+               <p class="histogram__count ">50254</p>
+               <div class="histogram__chart">
+                 <div style="height: 100%" class="histogram__column"></div>
+                 <div style="height: 54%" class="histogram__column"></div>
+                 <div style="height: 36%" class="histogram__column"></div>
+                 <div style="height: 72%" class="histogram__column"></div>
+                 <div style="height: 22%" class="histogram__column"></div>
+                 <div style="height: 15%" class="histogram__column"></div>
+                 <div style="height: 35%" class="histogram__column"></div>
+                 <div style="height: 48%" class="histogram__column"></div>
+                 <div style="height: 29%" class="histogram__column"></div>
+                 <div style="height: 77%" class="histogram__column"></div>
+                 <div style="height: 65%" class="histogram__column"></div>
+                 <div style="height: 87%" class="histogram__column"></div>
+                 <div style="height: 97%" class="histogram__column"></div>
+                 <div style="height: 11%" class="histogram__column"></div>
+                 <div style="height: 4%" class="histogram__column"></div>
+                 <div style="height: 62%" class="histogram__column"></div>
+                 <div style="height: 31%" class="histogram__column"></div>
+                 <div style="height: 45%" class="histogram__column"></div>
+                 <div style="height: 56%" class="histogram__column"></div>
+                 <div style="height: 88%" class="histogram__column"></div>
+                 <div style="height: 19%" class="histogram__column"></div>
+                 <div style="height: 13%" class="histogram__column"></div>
+                 <div style="height: 27%" class="histogram__column"></div>
+                 <div style="height: 33%" class="histogram__column"></div>
+                 <div style="height: 44%" class="histogram__column"></div>
+                 <div style="height: 91%" class="histogram__column"></div>
+                 <div style="height: 68%" class="histogram__column"></div>
+                 <div style="height: 62%" class="histogram__column"></div>
+                 <div style="height: 37%" class="histogram__column"></div>
+                 <div style="height: 21%" class="histogram__column"></div>
+               </div>
+            </div>
+           <p class="card__title">Histogram</p>
+           <p class="card__text">Organism</p>
+          </a>   
+               
+         </div>
+       </div>
+          <div class="container">
+          <p class="tabs__content_title" >Modal</p>
+          <button id="modal-open" class="button button_primary" >Open modal</button>
+    
+          <div class="modal" id="modal"> 
+            <div class="modal__container">
+               
+               <div class="modal__xmark" id="modal-close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4714 3.52861C12.7318 3.78896 12.7318 4.21107 12.4714 4.47141L4.47141 12.4714C4.21107 12.7318 3.78896 12.7318 3.52861 12.4714C3.26826 12.2111 3.26826 11.789 3.52861 11.5286L11.5286 3.52861C11.789 3.26826 12.2111 3.26826 12.4714 3.52861Z" fill="#495057"/>
+                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52861 3.52861C3.78896 3.26826 4.21107 3.26826 4.47141 3.52861L12.4714 11.5286C12.7318 11.789 12.7318 12.2111 12.4714 12.4714C12.2111 12.7318 11.789 12.7318 11.5286 12.4714L3.52861 4.47141C3.26826 4.21107 3.26826 3.78896 3.52861 3.52861Z" fill="#495057"/>
+                   </svg>
+                </div>       
+               <div class="container">
+               <div class="modal__title">Modal title</div>
+               <div class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+             </div>
+              
+             </div>
+             </div>
+          </div>
+          <div class="container">
+          <p class="tabs__content_title" >Accordion</p>
+         </div>
+    </div>
+    </main>
+   </div>  
      <footer class="footer footer_color">
        <div class="container container_footer ">
         <h2 class="footer__title">About </h2>
@@ -154,6 +454,7 @@
         curious about.</p>
       </div>
      </footer>
-     </div>
-    </body>
+   </div>
+   </body>
+   <script src="./05-lection3/02-modal/modal.js"></script>
 </html>
