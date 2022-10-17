@@ -20,10 +20,10 @@ padding-bottom: 13px;
 padding-left: 24px;
 outline: none;
 position: relative;
-background-image: url("data:image/svg+xml,../../assets/images/icons-sprite.svg#check-circle")
+
 }
 
-.input_icon {
+.input__icon {
     position: absolute;
     right: 16px;
     
@@ -31,7 +31,7 @@ background-image: url("data:image/svg+xml,../../assets/images/icons-sprite.svg#c
 
 
 
-.input__text_filled (вставить в другое место){
+.input__text_filled{
 
 font-family: 'Inter';
 font-style: normal;
