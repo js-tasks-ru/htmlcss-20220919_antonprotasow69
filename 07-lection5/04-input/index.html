@@ -7,28 +7,36 @@
         <link rel="stylesheet" href="../../assets/css/sprite.css">
     </head>
     <body>
-        <div class="input" >
-            
-            <input type="text" placeholder="Placeholder" class="input__text ">
-            
+        <div class="form" >
+
+            <label for="input1" class="form__label">Label</label>
+            <div class="form__wrapper">
+            <input type="text" id="input1" placeholder="Placeholder" class="form__input-text  ">
+            </div>
         </div>
-        <div class="input">
-            <input type="text" placeholder="Placeholder" class="input__text  ">
-            
+        <div class="form">
+            <label for="input2" class="form__label">Focus</label>
+            <div class="form__wrapper">
+            <input id="input2" type="text" placeholder="Placeholder" class="form__input-text  ">
+            </div>
         </div>
-        <div class="input input_success">
-           
-            <input type="text" placeholder="Placeholder" class="input__text ">
-           
-            <svg class="icon input__icon">
+        <div class="form form_success">
+            <label for="input3" class="form__label">Success</label>
+            <div class="form__wrapper">
+              <input id="input3" type="text" placeholder="Placeholder" class="form__input-text ">
+              <svg class="icon form__icon">
                 <use href="../../assets/images/icons-sprite.svg#check-circle"></use>
-            </svg>
+              </svg>
+            </div>
         </div>
-        <div class="input input_invalid">
-            <input type="text" placeholder="Placeholder" class="input__text ">
-            <svg class="icon input__icon">
-                <use href="../../assets/images/icons-sprite.svg#alert"></use>
-            </svg>
+        <div class="form form_invalid">
+            <label for="input4" class="form__label">Error</label> 
+            <div class="form__wrapper">
+              <input id="input4" type="text" placeholder="Placeholder" class="form__input-text  ">
+              <svg class="icon form__icon">
+                 <use href="../../assets/images/icons-sprite.svg#alert"></use>
+              </svg>
+            </div>
         </div>
     </body>
 </html>
