@@ -4,6 +4,11 @@
   width:100%;
 }
 
+.container_button {
+  padding-bottom: 92px;
+  width: fit-content;
+  display:flex;
+}
 
 
 @media (max-width:575.98px) {

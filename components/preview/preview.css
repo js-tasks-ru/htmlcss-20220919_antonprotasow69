@@ -6,13 +6,40 @@
 
 .preview__cards {
     padding-top: 67px;
-    padding-bottom: 204px;
+    padding-bottom: 64px;
     display:flex;
     gap: 30px;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+.preview__button {
+    
+   box-sizing: border-box;
+   cursor:pointer;
+   font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: var(--grey-4);
+text-align: center;
+background-color: transparent;
+display:inline-flex;
+justify-content: center;
+transform: translateY(0px);
+}
+
+.preview__button__alternate {
+    border: 1px solid var(--grey-3);
+    padding: 15px 52px 14px 53px;
+    border-radius:8px; 
+}
+
+.preview__button__alternate:active {
+  transform: translateY(10px);
+  transition: transform 200ms ease-in;
+}
 .preview__cards_tabs {
      
      padding-bottom: 0px;
