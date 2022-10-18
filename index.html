@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./assets/css/sprite.css">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> 
+        <link rel="stylesheet" href="./03-lection1/02-accordion/accordion.css">
         <link rel="stylesheet" href="./03-lection1/01-button/button.css">
         <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
         <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
@@ -217,10 +218,11 @@
           </div>
           
         </div>
-        <div class="container container_button">
-        <div class="preview__button preview__button_transition"> 
-            <button class="preview__button preview__button__alternate">Load more</button>    
-              </div>
+        <div class="container ">
+          <div class="preview__button-wrapper"> 
+            
+            <button class="preview__button-alternate">Load more</button>    
+          </div>
           </div>
       </div>
       <div class="tabs__content tabs__content_atom">
@@ -440,6 +442,29 @@
           </div>
           <div class="container">
           <p class="tabs__content_title" >Accordion</p>
+          <div class="accordion">
+            <details class="accordion__item" open>
+                <summary class="accordion__summary">
+                    Accordion item 1   <svg class="accordion__marker icon icon_marker">
+                        <use href="../../assets/images/icons-sprite.svg#marker"></use>
+                       </svg>
+                </summary>
+                <p class="accordion__content">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </details>
+              
+            <details class="accordion__item"  >
+                <summary class="accordion__summary">
+                    Accordion item 2 <svg class="accordion__marker icon icon_marker">
+                        <use href="../../assets/images/icons-sprite.svg#marker"></use>
+                       </svg>
+                </summary>
+                <p class=" accordion__content">
+                    Hidden content
+                </p>
+            </details>
+        </div>
          </div>
     </div>
     </main>

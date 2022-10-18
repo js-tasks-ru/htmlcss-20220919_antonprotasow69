@@ -48,6 +48,8 @@ color: var(--grey-3);
 
 .tabs__content {
     display:none;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .tabs__content_title {
@@ -93,4 +95,12 @@ line-height: 38px;
 #organisms-tab:checked ~ .container .tabs__scroller label[for="organisms-tab"] .tabs_icon {
     transform: scale(1,1);
     
+}
+
+@media (max-width:575.98px) {
+     .tabs__content {
+        padding-top: 16px;
+        padding-bottom:16px;
+     }
+     
 }

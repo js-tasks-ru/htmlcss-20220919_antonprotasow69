@@ -1,17 +1,20 @@
+.accordion {
+    background-color: var(--white);
+}
 
-
-.accordion__item {box-sizing: border-box ;
+.accordion__item {
+    box-sizing: border-box ;
     font-size:16px;
     vertical-align: top;
     text-align:left;
-    border: 1px solid #ACB5BD;
+    border: 1px solid var(--grey-3);
     border-radius: 8px;
     padding-left: 32px;
     padding-top: 24px;
     padding-bottom: 24px;
-    padding-right: 48.69px;
+    padding-right: 32px;
     cursor:pointer;
-    
+    margin-bottom: 8px;
  }
 .accordion__item[open] {
     padding-bottom: 32px;
@@ -32,7 +35,8 @@ font-size: 16px;
 line-height: 24px;
 display:flex;
 justify-content:space-between;
-    
+align-items: center;
+   
 }
 
  .accordion__content {
@@ -46,9 +50,9 @@ line-height: 24px;
      margin-bottom: 0;
  }
 .accordion__marker {
-    
-   padding-left: 0.5em;
-   padding-right: 0.5em;
+
+   
+   
    
   }
 
