@@ -4,8 +4,39 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
+        <link rel="stylesheet" href="../../assets/css/sprite.css">
     </head>
     <body>
+        <div class="form-group" >
 
+            <label for="input1" class="form-group__label">Label</label>
+            <div class="form-group__wrapper">
+            <input type="text" id="input1" placeholder="Placeholder" class="form-group__input-text  ">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input2" class="form-group__label">Focus</label>
+            <div class="form-group__wrapper">
+            <input id="input2" type="text" placeholder="Placeholder" class="form-group__input-text  " >
+            </div>
+        </div>
+        <div class="form-group form-group_success">
+            <label for="input3" class="form-group__label">Success</label>
+            <div class="form-group__wrapper">
+              <input id="input3" type="text" placeholder="Placeholder" class="form-group__input-text ">
+              <svg class="icon form-group__icon">
+                <use href="../../assets/images/icons-sprite.svg#check-circle"></use>
+              </svg>
+            </div>
+        </div>
+        <div class="form-group form-group_invalid">
+            <label for="input4" class="form-group__label">Error</label> 
+            <div class="form-group__wrapper">
+              <input id="input4" type="text" placeholder="Placeholder" class="form-group__input-text  ">
+              <svg class="icon form-group__icon">
+                 <use href="../../assets/images/icons-sprite.svg#alert"></use>
+              </svg>
+            </div>
+        </div>
     </body>
 </html>
