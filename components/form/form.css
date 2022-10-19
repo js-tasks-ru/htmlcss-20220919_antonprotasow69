@@ -18,6 +18,12 @@
     gap:32px;
 }
 
+.forms__molecules {
+    display:flex;
+    gap: 32px;
+
+}
+
 
 @media (max-width:575.98px) {
     .forms__preview {
@@ -25,6 +31,14 @@
     column-gap: 8px;
     
     margin-top: 16px;
+    
+    }
+
+    .forms__molecules {
+        margin-left: 16px;
+        margin-right: 16px;
+        flex-direction: column;
+        gap: 16px;
     
     }
 }
