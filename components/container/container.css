@@ -4,12 +4,6 @@
   width:100%;
 }
 
-.container_button {
-  
-  width: fit-content;
-  display:flex;
-}
-
 
 @media (max-width:575.98px) {
   .container {
