@@ -54,7 +54,7 @@ box-sizing: border-box;
    font-weight: 400;
    font-size: 16px;
    line-height: 24px;
-   color: #495057;
+   color: var(--grey-4);
 }
 
 .toggle__input:checked ~ .toggle__state .toggle__control {

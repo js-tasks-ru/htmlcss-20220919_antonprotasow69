@@ -59,17 +59,17 @@
 
 .button_primary:hover
 {   
-  background-color: #374FC7; 
+  background-color:  var(--blue); 
 }
 
 .button_secondary:hover
 {
-   background-color: #5028C6;
+   background-color: var(--purple-2);
 }
 
 .button_alternate:hover 
 {  
-   border: 1px solid #212429;  
+   border: 1px solid var(--black);  
 }
 
 .button:disabled { 
