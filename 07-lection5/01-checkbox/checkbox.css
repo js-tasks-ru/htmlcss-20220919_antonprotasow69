@@ -93,3 +93,35 @@ color: var(--grey-4);
     color: var(--grey-2);
 
 }
+
+@media (max-width:575.98px) {
+
+
+  .checkbox__state {
+     gap:8px;
+     
+  }
+  
+  .checkbox__control {
+     width: 28px;
+     height: 28px;
+     border-radius: 4px;
+    
+  }
+
+  .checkbox__title {
+
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 16px;
+
+      
+  }
+  
+  .checkbox__anim {
+     height: 28px;
+     width: 28px;
+     border-radius: 8px;
+     
+  }
+}

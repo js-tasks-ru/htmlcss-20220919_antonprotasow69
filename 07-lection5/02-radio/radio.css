@@ -70,3 +70,46 @@ color: var(--grey-4);
 .radio__input:disabled ~ .radio__container .radio__title {
     color: var(--grey-2);
 }
+
+@media (max-width:575.98px) {
+
+    .radio__container {
+        
+        gap:8px;
+       
+      }
+      
+      
+      .radio__control {
+          box-sizing: border-box;
+          width: 28px;
+          height: 28px;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          background: var(--white);
+      
+          border: 1px solid var(--grey-2);
+          border-radius: 14px;
+      
+      }
+      
+      .radio__title {
+       
+      
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 16px;
+      
+     
+      }
+      
+      .radio__icon {
+          
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+        
+      }
+   
+  }

@@ -53,3 +53,13 @@ display:none;
    position: absolute;
    top:50%;
 }
+
+@media (max-width:575.98px) {
+
+  .tooltip__helper {
+
+font-size: 12px;
+line-height: 16px;
+
+}
+}
