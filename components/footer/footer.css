@@ -39,7 +39,7 @@ text-align: center;
 }
 
 .footer_bg_transparent {
-  background-color: #F9FAFC;
+  background-color: var(--grey-1);
 
 }
 

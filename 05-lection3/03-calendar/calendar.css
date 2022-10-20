@@ -64,7 +64,7 @@ color: #90A0B7;
 
 .calendar__item_marked {
     background-color: var(--blue-2);
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .calendar__item_between {

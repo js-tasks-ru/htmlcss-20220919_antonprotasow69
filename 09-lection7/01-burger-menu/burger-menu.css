@@ -5,7 +5,7 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(127,127,127, 0.5); 
+    background: var(--grey-1) ; 
     transform: translateX(-100vw);
     transition: transform 200ms ease-in;
 }
@@ -35,7 +35,5 @@
    .burger-menu {
     display:none;
    }
-
-   
 
 }

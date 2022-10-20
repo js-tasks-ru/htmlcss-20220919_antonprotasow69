@@ -1,7 +1,7 @@
 .preview {
     border-top: 1px solid rgba(221, 226, 229, 1);
     border-bottom: 1px solid rgba(221, 226, 229, 1);
-    background: #F9FAFC;
+    background: var(--grey-1);
 }
 
 .preview__cards {
