@@ -20,8 +20,11 @@
         <link rel="stylesheet" href="./07-lection5/02-radio/radio.css">
         <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css">
         <link rel="stylesheet" href="./07-lection5/04-input/input.css">
+        <link rel="stylesheet" href="./09-lection7/01-burger-menu/burger-menu.css">
         <link rel="stylesheet" href="./components/tabs/tabs.css">
         <link rel="stylesheet" href="./components/forms/forms.css">
+        <link rel="stylesheet" href="./components/menu/menu.css">
+        
     </head>
     <body>
      <div class="page">
@@ -29,7 +32,13 @@
          
              <div class="container container_header">
             <div class="header__logo">  
-            <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button id="burger-menu-open" class="header__burger-open"> 
+                <svg class="icon">
+                <use href="../../assets/images/icons-sprite.svg#burger"></use>
+               </svg>
+                </button>
+              
+              <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_18343_447)">
               <rect y="1" width="30" height="30" fill="var(--black)"/>
               <rect x="38" width="32" height="32" rx="16" fill="var(--black)"/>
@@ -41,10 +50,60 @@
             </clipPath>
             </defs>
             </svg></div>
+            <div class="burger-menu" id="burger-menu">
+              <div class="burger-menu__wrapper">
+              <button id="burger-menu-close" class="burger-menu__burger-close"> <svg class="icon icon_close-menu">
+                  <use href="../../assets/images/icons-sprite.svg#close-menu"></use>
+                 </svg>
+                 
+              </button> 
+          <a href="../index.html"><svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_18343_447)">
+                  <rect y="1" width="30" height="30" fill="var(--black)"/>
+                  <rect x="38" width="32" height="32" rx="16" fill="var(--black)"/>
+                <path d="M78 0L110 32H78V0Z" fill="var(--black)"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_18343_447">
+                <rect width="110" height="32" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg></a></div>
+                
+                 <div class="burger-menu__theme">
+                 <div>Dark mode</div>  
+                  <label class="toggle">
+                    <input type="checkbox" class="toggle__input">
+                    <div class="toggle__state">
+                      <div class="toggle__control">
+                          <div class="toggle__icon">
+                          </div>
+                      </div>
+                    </div>
+                  </label>
+                 </div>
+               
+                
+              <ul class="menu menu_mobile">
+        
+                <li class="menu__title">Components</li>
+                <li class="menu__box"><a class="menu__box" href="./template_modal.html">Modal</a></li>
+                <li class="menu__box"><a class="menu__box" href="./template_tooltip.html">Tooltip</a></li>
+                <li class="menu__box"><a class="menu__box menu__box_active" href="./template_avatar.html">Avatar</a></li>
+                <li class="menu__box"><a class="menu__box" href="./template_calendarl.html">Calendar</a></li>
+                <li class="menu__box"><a class="menu__box" href="./template_histogram.html">Histogram</a></li>
+                <li class="menu__box"><a class="menu__box" href="./template_custom_form_elements.html">Custom form elements</a></li>
+                <li class="menu__box"><a class="menu__box" href="../index.html">Main Page</a></li>
+            
+              </ul>
+                
+            </div>
                 <h1 class="header__title"> Reusable component library </h1>
              </div>
+             
 
         </header>
+        
         <div class="tabs">
           
            <input type="radio" id="all-tab" name="tabs" class="tabs_input" checked>
@@ -762,4 +821,5 @@
    </div>
    </body>
    <script src="./05-lection3/02-modal/modal.js"></script>
+   <script defer src="./09-lection7/01-burger-menu/burger-menu.js"></script>
 </html>

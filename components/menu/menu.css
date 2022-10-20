@@ -52,4 +52,27 @@
     .menu {
         display:none;
     }
+
+    .menu_mobile {
+        display:flex;
+        align-items: flex-start;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .menu_mobile .menu__title {
+        color:var(--grey-3);
+        padding-top: 24px;
+    }
+
+    .menu_mobile .menu__box {
+        margin-bottom: 16px;
+    }
+
+    .menu_mobile .menu__box:nth-last-child(1) {
+       margin-top: 0;
+       margin-bottom: 0;
+    }
+
+    
 }
