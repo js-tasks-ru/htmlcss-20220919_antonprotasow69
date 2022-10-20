@@ -26,10 +26,12 @@ bottom: calc(100% + 9px);
 left: 50%;
 transform: translateX(-50%);
 display:none;
+
 }
 
 .tooltip__helper_display {
   display:block;
+
 }
 
 .tooltip__helper:before {
@@ -47,6 +49,7 @@ display:none;
 
 .tooltip__trigger:hover ~ .tooltip__helper {
   display: block;
+
 }
 
 .tooltip_resize {
@@ -54,6 +57,10 @@ display:none;
    top:50%;
 }
 
+.tooltip_inner-page {
+  margin-top: 70px;
+  margin-left: 30px;
+}
 @media (max-width:575.98px) {
 
   .tooltip__helper {

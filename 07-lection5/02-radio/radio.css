@@ -65,10 +65,12 @@ color: var(--grey-4);
 
 .radio__input:disabled ~ .radio__container .radio__control {
     background-color: var(--grey-2);
+    cursor:auto;
 }
 
 .radio__input:disabled ~ .radio__container .radio__title {
     color: var(--grey-2);
+    cursor:auto;
 }
 
 @media (max-width:575.98px) {

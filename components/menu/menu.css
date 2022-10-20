@@ -1,7 +1,7 @@
 .menu {
    
     list-style-type: none;
-    width:229px;
+    
     margin: 0;
     padding: 0;
     display:flex;
@@ -38,14 +38,15 @@
     margin-top: 26px;
     margin-bottom: 0;
 }
+.menu__box_active:visited{
+    color: #D84910;
+}
 
 .menu__box:hover {
     color: #D84910;
 }
 
-.menu__box:focus {
-    color: #D84910;
-}
+
 
 
 @media (max-width:575.98px) {
