@@ -14,10 +14,13 @@
     <link rel="stylesheet" href="../06-lection4/01-avatar/avatar.css">
     <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
     <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
+    <link rel="stylesheet" href="../components/tabs/tabs.css">
+
   </head>
    <body>
      <div class="page">
       <header class="header header__second-page header__second_bg_transparent"> 
+        <div class="container">
       <div class="header__second-logo">
         <button id="burger-menu-open" class="header__burger-open"> 
           <svg class="icon">
@@ -77,27 +80,67 @@
                 <li class="menu__box"><a class="menu__box" href="../index.html">Main Page</a></li>
               </ul>
             </div>             
-     </header>
-      <main class="main__second-page">
-           <ul class="menu">
-          
-            <li class="menu__title">Components</li>
-            <li class="menu__box"><a class="menu__box" href="./template_modal.html">Modal</a></li>
-            <li class="menu__box"><a class="menu__box" href="./template_tooltip.html">Tooltip</a></li>
-            <li class="menu__box"><a class="menu__box menu__box_active" href="./template_avatar.html">Avatar</a></li>
-            <li class="menu__box"><a class="menu__box" href="./template_calendarl.html">Calendar</a></li>
-            <li class="menu__box"><a class="menu__box" href="./template_histogram.html">Histogram</a></li>
-            <li class="menu__box"><a class="menu__box" href="./template_custom_form_elements.html">Custom form elements</a></li>
-            <li class="menu__box"><a class="menu__box" href="../index.html">Main Page</a></li>
+        </div>
+          </header>
+      <main>
+        <div class="container">
+          <div class="main__second-page">
+        <ul class="menu">
+          <li class="menu__title">Components</li>
+          <li class="menu__box"><a class="menu__box" href="./template_modal.html">Modal</a></li>
+          <li class="menu__box"><a class="menu__box " href="./template_tooltip.html">Tooltip</a></li>
+          <li class="menu__box"><a class="menu__box menu__box_active " href="./template_avatar.html">Avatar</a></li>
+          <li class="menu__box"><a class="menu__box" href="./template_calendarl.html">Calendar</a></li>
+          <li class="menu__box"><a class="menu__box" href="./template_histogram.html">Histogram</a></li>
+          <li class="menu__box"><a class="menu__box" href="./template_custom_form_elements.html">Custom form elements</a></li>
+          <li class="menu__box"><a class="menu__box" href="../index.html">Main Page</a></li>
+        </ul>
         
-          </ul>
-            <div class="component">
+          <div class="component">
              <p class="component__histogram">Avatar</p>
              <div class="avatar">
-              <img src="https://s3-alpha-sig.figma.com/img/5f97/eb43/1bd4dd6069428f64473bd4e633b7c00b?Expires=1665964800&Signature=Ugh9DpRIBAdb7Ft1cjFuD97nYAaL8oiJs-UYSHchwbCdUhD-woGD2P6LawKpRn0V8A2YCNMxGqEGg5PjMGWmEbZRF0p65p7l1HFkVtzFlW6zR-Yw3JLHqE72cjGqU7Vw0YEkA~jAHaP4HBc0MEoUbM15M1aeZht2OeoyCgvXTo0YMZw5dF6zPvKFMrnw57dVutEYzpSc~fb~12XvXe1D9iu8FS1nXsWRF7svp4M3zJn7peGuE7pAfQFu4nOPYkI7cBF2MRmi-qm2A03LZT~Zh~VNs3AUaT6WcZWdPDV83ETEirraFcfjIZG4-gYxbOFZEEUFCbtRugrrnPe1SYDLiA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="avatar" class="avatar__img">
+              <img src="../assets/images/avatar.jpg" alt="avatar" class="avatar__img">
              </div>
-            </div>
-          
+             <div class="tabs tabs_inner">
+             
+              <input type="radio" id="html-tab" name="tabs-inner" class="tabs_input" checked>
+              <input type="radio" id="css-tab" name="tabs-inner" class="tabs_input">
+
+                <div class="tabs__scroller">
+                <label class="tabs__radio"  for="html-tab"> 
+                   <div class="tabs__title"> HTML</div>
+                   <div class="tabs_icon"> </div>
+                </label>
+    
+                <label class="tabs__radio" for="css-tab" >
+                   <div class="tabs__title">CSS</div>
+                   <div class="tabs_icon"> </div>
+                </label>
+               </div>
+               <div class="tabs_tab-divider"></div>
+              <div class="tabs__content tabs__content_html"> 
+               <pre><code>&lt;div class=&quot;avatar&quot;&gt;
+    &lt;img src=&quot;../assets/images/avatar.jpg&quot; alt=&quot;avatar&quot; class=&quot;avatar__img&quot;&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tabs__content tabs__content_css"> 
+                <pre><code>.avatar {
+                  display:flex;
+                  
+              }
+              .avatar__img {
+                  box-sizing: border-box;
+                  
+                  max-height: 100%;
+                  max-width: 100%;
+                  border-radius: 50%;
+                  object-fit: cover;
+              }</code></pre>
+              </div>
+              </div>
+          </div>
+         </div>
+        </div>    
        </main>
        <footer class="footer footer__second-page footer_bg_transparent">
        <div class="footer__inscription">Reusable component library</div>

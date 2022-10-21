@@ -2,10 +2,9 @@
     margin-top: 36px;
     grid-area: main;
     display:grid;
-    grid-template-columns: 289px 1fr;
+    grid-template-columns: 285px 1fr;
     min-height: calc(100vh - 130px);
-    margin-left: 165px;
-    margin-right: 165px;
+    
 }
 
 @media (max-width: 575.98px) {

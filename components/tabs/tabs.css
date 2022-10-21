@@ -2,6 +2,11 @@
    width: 100%;
    margin: 0;
     background-color: var(--white);
+
+}
+.tabs_inner {
+  padding-top: 32px;
+  
 }
 
 .tabs__radio {
@@ -25,6 +30,14 @@ background-color: var(--white);
 color: var(--grey-3);
 
 }
+.tabs_tab-divider {
+    height: 1px;
+    background: var(--grey-2);
+    margin-left:-48px;
+    margin-right:-48px;
+   
+}
+
 
 .tabs__title {
   
@@ -48,6 +61,7 @@ color: var(--grey-3);
     display:none;
     padding-top: 48px;
     padding-bottom: 48px;
+     
 }
 
 .tabs__content_title {
@@ -62,10 +76,17 @@ font-size: 28px;
 line-height: 38px;
 }
 
+.tabs__content_html {
+    overflow-x:auto;
+    width:100%;
+}
+
 #all-tab:checked ~ main .tabs__content_all,
 #atom-tab:checked ~ main .tabs__content_atom,
 #molecules-tab:checked ~ main .tabs__content_molecules,
-#organisms-tab:checked ~ main .tabs__content_organisms {
+#organisms-tab:checked ~ main .tabs__content_organisms,
+#html-tab:checked ~ .tabs__content_html,
+#css-tab:checked ~ .tabs__content_css {
 
     display:block;
 }
@@ -81,7 +102,9 @@ line-height: 38px;
 #all-tab:checked ~ .container .tabs__scroller label[for="all-tab"] .tabs__title,
 #atom-tab:checked ~ .container .tabs__scroller label[for="atom-tab"] .tabs__title,
 #molecules-tab:checked ~ .container .tabs__scroller label[for="molecules-tab"] .tabs__title,
-#organisms-tab:checked ~ .container .tabs__scroller label[for="organisms-tab"] .tabs__title
+#organisms-tab:checked ~ .container .tabs__scroller label[for="organisms-tab"] .tabs__title,
+#html-tab:checked ~ .tabs__scroller label[for="html-tab"] .tabs__title,
+#css-tab:checked ~ .tabs__scroller label[for="css-tab"] .tabs__title
  {
     color: var(--black);
 }
@@ -89,7 +112,9 @@ line-height: 38px;
 #all-tab:checked ~ .container .tabs__scroller label[for="all-tab"] .tabs_icon,
 #atom-tab:checked ~ .container .tabs__scroller label[for="atom-tab"] .tabs_icon,
 #molecules-tab:checked ~ .container .tabs__scroller label[for="molecules-tab"] .tabs_icon,
-#organisms-tab:checked ~ .container .tabs__scroller label[for="organisms-tab"] .tabs_icon {
+#organisms-tab:checked ~ .container .tabs__scroller label[for="organisms-tab"] .tabs_icon,
+#html-tab:checked ~ .tabs__scroller label[for="html-tab"] .tabs_icon,
+#css-tab:checked ~ .tabs__scroller label[for="css-tab"] .tabs_icon {
     transform: scale(1,1);
     
 }

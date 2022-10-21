@@ -17,11 +17,13 @@
     <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
     <link rel="stylesheet" href="../07-lection5/04-input/input.css">
     <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
+    <link rel="stylesheet" href="../components/tabs/tabs.css">
    
   </head>
    <body>
      <div class="page">
       <header class="header header__second-page header__second_bg_transparent"> 
+        <div class="container">
       <div class="header__second-logo">
         <button id="burger-menu-open" class="header__burger-open"> 
           <svg class="icon">
@@ -82,9 +84,11 @@
               </ul>
             </div> 
         
-      
+          </div>
      </header>
-      <main class="main__second-page">
+      <main >
+        <div class="container">
+        <div class="main__second-page">
            <ul class="menu">
           
             <li class="menu__title">Components</li>
@@ -146,9 +150,7 @@
                       <svg class="icon icon_tick">
                           <use href="../../assets/images/icons-sprite.svg#tick"></use>
                          </svg>
-            
-                   </div>
-                   
+                   </div>  
               </div>
                 <div class="checkbox__title">Default</div>
           </div>
@@ -187,9 +189,7 @@
               <input type="checkbox" class="toggle__input">
             <div class="toggle__state">
                 <div class="toggle__control">
-                    <div class="toggle__icon">
-                       
-  
+                    <div class="toggle__icon">                 
                     </div>
                 </div>
                   <div class="toggle__title">Default</div>
@@ -200,7 +200,6 @@
           <div class="toggle__state">
               <div class="toggle__control">
                   <div class="toggle__icon">
-                    
                    </div>
               </div>
                 <div class="toggle__title">Checked</div>
@@ -211,8 +210,6 @@
       <div class="toggle__state">
           <div class="toggle__control">
               <div class="toggle__icon">
-                
-  
                </div>
           </div>
             <div class="toggle__title">Disabled</div>
@@ -245,8 +242,10 @@
                   </div>
               </div>
             </div> 
+            
             </div>
-          
+          </div>
+        </div>
        </main>
        <footer class="footer footer__second-page footer_bg_transparent">
        <div class="footer__inscription">Reusable component library</div>

@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="../05-lection3/03-calendar/calendar.css">
     <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
     <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
+    <link rel="stylesheet" href="../components/tabs/tabs.css">
   </head>
    <body>
      <div class="page">
       <header class="header header__second-page header__second_bg_transparent"> 
+        <div class="container">
       <div class="header__second-logo">
         <button id="burger-menu-open" class="header__burger-open"> 
           <svg class="icon">
@@ -77,10 +79,11 @@
                 <li class="menu__box"><a class="menu__box" href="../index.html">Main Page</a></li>
               </ul>
             </div> 
-        
-      
+          </div>
      </header>
-      <main class="main__second-page">
+      <main>
+         <div class="container">
+          <div class="main__second-page">
            <ul class="menu">
           
             <li class="menu__title">Components</li>
@@ -132,7 +135,7 @@
                 <div class="calendar__item calendar__item_between">20</div>
                 <div class="calendar__item calendar__item_between">21</div>
                 <div class="calendar__item calendar__item_between">22</div>
-                <div class="calendar__item ">23</div>
+                <div class="calendar__item calendar__item_marked">23</div>
                 <div class="calendar__item">24</div>
                 <div class="calendar__item">25</div>
                 <div class="calendar__item">26</div>
@@ -144,11 +147,156 @@
     
                </div>
               </div>
-    
            </div>
+           <div class="tabs tabs_inner">
+          
+            <input type="radio" id="html-tab" name="tabs-inner" class="tabs_input" checked>
+            <input type="radio" id="css-tab" name="tabs-inner" class="tabs_input">
+
+              <div class="tabs__scroller">
+              <label class="tabs__radio"  for="html-tab"> 
+                 <div class="tabs__title"> HTML</div>
+                 <div class="tabs_icon"> </div>
+              </label>
+  
+              <label class="tabs__radio" for="css-tab" >
+                 <div class="tabs__title">CSS</div>
+                 <div class="tabs_icon"> </div>
+              </label>
+             </div>
+             <div class="tabs_tab-divider"></div>
+            <div class="tabs__content tabs__content_html"> 
+          <pre><code>&lt;div class=&quot;calendar calendar_size_inner-page &quot;&gt;
+        &lt;div class=&quot;calendar__title calendar_title_inner-page&quot;&gt;October 2020&lt;/div&gt;
+              &lt;div class=&quot;calendar__wrapper&quot;&gt;
+                &lt;div class=&quot;calendar__inner calendar__inner_inner-page &quot;&gt;
+                &lt;div class=&quot;calendar__item calendar__item_day &quot;&gt;Mon&lt;/div&gt;
+                &lt;div class=&quot;calendar__item calendar__item_day&quot;&gt;Tue&lt;/div&gt;
+                &lt;div class=&quot;calendar__item calendar__item_day&quot;&gt;Wed&lt;/div&gt;
+                &lt;div class=&quot;calendar__item calendar__item_day&quot;&gt;Thu&lt;/div&gt;
+                &lt;div class=&quot;calendar__item calendar__item_day&quot;&gt;Fri&lt;/div&gt;
+                &lt;div class=&quot;calendar__item calendar__item_day&quot;&gt;Sat&lt;/div&gt;
+                &lt;div class=&quot;calendar__item calendar__item_day&quot;&gt;Sun&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;&lt;/div&gt;
+                 &lt;div class=&quot;calendar__item&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;1&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;2&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;3&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;4&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;5&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;6&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;7&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;8&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;9&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;10&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;11&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;12&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;13&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;14&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;15&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;16&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;17&lt;/div&gt;
+                &lt;div class=&quot;calendar__item calendar__item_marked &quot;&gt;18&lt;/div&gt;
+                &lt;div class=&quot;calendar__item calendar__item_between &quot;&gt;19&lt;/div&gt;
+                &lt;div class=&quot;calendar__item calendar__item_between&quot;&gt;20&lt;/div&gt;
+                &lt;div class=&quot;calendar__item calendar__item_between&quot;&gt;21&lt;/div&gt;
+                &lt;div class=&quot;calendar__item calendar__item_between&quot;&gt;22&lt;/div&gt;
+                 &lt;div class=&quot;calendar__item &quot;&gt;23&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;24&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;25&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;26&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;27&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;28&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;29&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;30&lt;/div&gt;
+                &lt;div class=&quot;calendar__item&quot;&gt;31&lt;/div&gt;
+  
+                 &lt;/div&gt;
+                &lt;/div&gt;
+             &lt;/div&gt;</code></pre>
+            </div>
+            <div class="tabs__content tabs__content_css"> 
+              <pre><code>.calendar {
+                border: 1px solid var(--grey-3);
+                border-radius: 8px;
+                max-width: 100%;
+                padding: 28px 30px 30px;
+                 
+                }
+                
+                .calendar__title {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                color: #334D6E;
+                }
+                .calendar__wrapper {
+                 padding-bottom: 100%;
+                 position: relative;
+                }
+                .calendar__inner {
+                 width: 100%;
+                 height: 100%;
+                 display:grid;
+                 position: absolute;
+                 top:0;
+                 left: 0;
+                 grid-template-columns:repeat(7, auto);
+                 grid-template-rows:repeat(7, auto);
+                }
+                
+                .calendar__item {
+                 display:flex;
+                 justify-content: center;
+                 align-items: center;
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #334D6E;
+                
+                }
+                .calendar__item_day {
+                 font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                /* identical to box height, or 143% */
+                
+                display: flex;
+                align-items: flex-end;
+                text-align: center;
+                
+                /* #90A0B7 */
+                
+                color: #90A0B7;
+                }
+                
+                .calendar__item_marked {
+                 background-color: var(--blue-2);
+                 color: var(--white);
+                }
+                
+                .calendar__item_between {
+                 background: #A0B1F5;
+                 opacity: 0.2;
+                }</code></pre>
+            </div>
+            </div>
            
             </div>
-          
+          </div>
+        </div>
        </main>
        <footer class="footer footer__second-page footer_bg_transparent">
        <div class="footer__inscription">Reusable component library</div>
