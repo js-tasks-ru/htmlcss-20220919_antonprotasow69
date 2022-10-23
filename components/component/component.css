@@ -1,16 +1,16 @@
 .component {
-    
+    box-sizing: border-box;
+    height:fit-content;
     background-color: var(--white);
     display:flex;
     flex-direction: column;
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
 border-radius: 12px;
- padding-top: 32px;
- padding-left: 48px;
- padding-right: 48px;
+ padding: 32px 48px;
+ overflow:hidden;
 }
 
-.component__histogram {
+.component__title {
     margin: 0;
     font-family: 'Inter';
 font-style: normal;
@@ -31,7 +31,7 @@ color: var(--grey-4);
         border-radius: 0%;
         box-shadow: 0;
     }
-    .component__histogram {
+    .component__title {
         padding-bottom: 20px;
         font-size: 20px;
         line-height: 26px;

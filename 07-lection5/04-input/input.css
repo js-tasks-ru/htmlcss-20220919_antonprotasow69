@@ -19,8 +19,6 @@ color: var(--grey-3);
 .form-group__wrapper {
     position: relative;
     display:flex;
-   
-  
 }
 
 .form-group__input-text {
@@ -36,12 +34,8 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 26px;
-/* identical to box height, or 130% */
+color: var(--grey-4);
 
-
-/* Gray 4 */
-
-color: #495057;
 }
 
 .form-group_success {
@@ -60,6 +54,7 @@ color: #495057;
 .form-group__input-text:focus {
    border-color: var(--blue-2);
    box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+   transition: border-color 250ms ease-in;
 }
 
 .form-group_success .form-group__input-text {
@@ -72,3 +67,12 @@ color: #495057;
     box-shadow: 0px 1px 1px rgba(240, 61, 62, 0.1);
 }
 
+@media (max-width:575.98px) {
+    
+    .form-group__input-text {
+      
+      padding: 17px 48px 13px 16px;
+    
+    
+    }
+}

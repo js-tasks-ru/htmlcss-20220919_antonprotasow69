@@ -6,7 +6,8 @@
 @import '../../components/header/header.css';
 @import '../../components/container/container.css';
 @import '../../components/component/component.css';
-
+@import '../../components/tabs/tabs.css';
+@import '../../components/menu/menu.css';
 @import '../../components/card/card.css';
 
 :root {
