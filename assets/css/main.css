@@ -34,3 +34,18 @@
 * {
   font-family: 'Roboto', sans-serif;
 }
+
+html[data-theme-dark] {
+  --white: #212429;
+  --black: #ffffff;
+  --grey-1: #495057;
+  --grey-2: #ACB5BD;
+  --grey-3: #DDE2E5;
+  --grey-4: #ffffff75;
+  --pink: #f784ad;
+  --purple: #7048e8;
+  --purple-2: #5028c6;
+  --blue: #374fc7;
+  --blue-2: #38a4c8;
+  --red: #f03d3e;
+}

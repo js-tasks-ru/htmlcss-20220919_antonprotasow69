@@ -1,56 +1,58 @@
 .tabs {
-   width: 100%;
-   margin: 0;
+    width: 100%;
+    margin: 0;
     background-color: var(--white);
 
 }
+
 .tabs_inner {
-  padding-top: 32px;
-  
+    padding-top: 32px;
+
 }
 
 .tabs__radio {
     position: relative;
     cursor: pointer;
-  
+
 }
 
 .tabs__scroller {
     /* p */
-display:flex;
-gap: 40px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-display: flex;
-align-items: center;
-background-color: var(--white);
-color: var(--grey-3);
+    display: flex;
+    gap: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    color: var(--grey-3);
 
 }
+
 .tabs_tab-divider {
     height: 1px;
     background: var(--grey-2);
-    margin-left:-48px;
-    margin-right:-48px;
-   
+    margin-left: -48px;
+    margin-right: -48px;
+
 }
 
 
 .tabs__title {
-  
-  padding-bottom: 8px;
+
+    padding-bottom: 8px;
 }
 
 .tabs_input {
     position: absolute;
-    outline: none; 
-    clip:rect(0 0 0 0 );
+    outline: none;
+    clip: rect(0 0 0 0);
 }
 
-.tabs_icon{
+.tabs_icon {
     height: 5px;
     background-color: var(--black);
     transform: scaleX(0);
@@ -58,97 +60,104 @@ color: var(--grey-3);
 }
 
 .tabs__content {
-    display:none;
+    display: none;
     padding-top: 48px;
     padding-bottom: 48px;
-     
+    color: var(--black);
 }
 
 .tabs__content_title {
-    
+
     margin-top: 62px;
     margin-bottom: 32px;
     color: var(--grey-3);
-    text-transform:uppercase;
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 38px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
 }
 
 .tabs__content_html {
-    overflow-x:auto;
-    width:100%;
+    overflow-x: auto;
+    width: 100%;
+
 }
 
-#all-tab:checked ~ main .tabs__content_all,
-#atom-tab:checked ~ main .tabs__content_atom,
-#molecules-tab:checked ~ main .tabs__content_molecules,
-#organisms-tab:checked ~ main .tabs__content_organisms,
-#html-tab:checked ~ .tabs__content_html,
-#css-tab:checked ~ .tabs__content_css {
+.tabs__content_css {
+    overflow-x: auto;
+    width: 100%;
 
-    display:block;
+}
+
+#all-tab:checked~main .tabs__content_all,
+#atom-tab:checked~main .tabs__content_atom,
+#molecules-tab:checked~main .tabs__content_molecules,
+#organisms-tab:checked~main .tabs__content_organisms,
+#html-tab:checked~.tabs__content_html,
+#css-tab:checked~.tabs__content_css {
+
+    display: block;
 }
 
 .tabs__radio:hover {
     color: var(--black);
 }
-.tabs__radio:hover > .tabs_icon {
-    
-    transform: scale(1,1);
+
+.tabs__radio:hover>.tabs_icon {
+
+    transform: scale(1, 1);
 }
 
-#all-tab:checked ~ .container .tabs__scroller label[for="all-tab"] .tabs__title,
-#atom-tab:checked ~ .container .tabs__scroller label[for="atom-tab"] .tabs__title,
-#molecules-tab:checked ~ .container .tabs__scroller label[for="molecules-tab"] .tabs__title,
-#organisms-tab:checked ~ .container .tabs__scroller label[for="organisms-tab"] .tabs__title,
-#html-tab:checked ~ .tabs__scroller label[for="html-tab"] .tabs__title,
-#css-tab:checked ~ .tabs__scroller label[for="css-tab"] .tabs__title
- {
+#all-tab:checked~.container .tabs__scroller label[for="all-tab"] .tabs__title,
+#atom-tab:checked~.container .tabs__scroller label[for="atom-tab"] .tabs__title,
+#molecules-tab:checked~.container .tabs__scroller label[for="molecules-tab"] .tabs__title,
+#organisms-tab:checked~.container .tabs__scroller label[for="organisms-tab"] .tabs__title,
+#html-tab:checked~.tabs__scroller label[for="html-tab"] .tabs__title,
+#css-tab:checked~.tabs__scroller label[for="css-tab"] .tabs__title {
     color: var(--black);
 }
 
-#all-tab:checked ~ .container .tabs__scroller label[for="all-tab"] .tabs_icon,
-#atom-tab:checked ~ .container .tabs__scroller label[for="atom-tab"] .tabs_icon,
-#molecules-tab:checked ~ .container .tabs__scroller label[for="molecules-tab"] .tabs_icon,
-#organisms-tab:checked ~ .container .tabs__scroller label[for="organisms-tab"] .tabs_icon,
-#html-tab:checked ~ .tabs__scroller label[for="html-tab"] .tabs_icon,
-#css-tab:checked ~ .tabs__scroller label[for="css-tab"] .tabs_icon {
-    transform: scale(1,1);
-    
+#all-tab:checked~.container .tabs__scroller label[for="all-tab"] .tabs_icon,
+#atom-tab:checked~.container .tabs__scroller label[for="atom-tab"] .tabs_icon,
+#molecules-tab:checked~.container .tabs__scroller label[for="molecules-tab"] .tabs_icon,
+#organisms-tab:checked~.container .tabs__scroller label[for="organisms-tab"] .tabs_icon,
+#html-tab:checked~.tabs__scroller label[for="html-tab"] .tabs_icon,
+#css-tab:checked~.tabs__scroller label[for="css-tab"] .tabs_icon {
+    transform: scale(1, 1);
+
 }
 
 @media (max-width:575.98px) {
     .tabs__scroller {
-     white-space: nowrap;  
-    gap: 24px;
-    margin-left: 16px;
-    margin-right: 16px;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
+        white-space: nowrap;
+        gap: 24px;
+        margin-left: 16px;
+        margin-right: 16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
     }
 
-     .tabs__content {
+    .tabs__content {
         padding-top: 16px;
-        padding-bottom:16px;
-     }
-  
+        padding-bottom: 16px;
+    }
 
-     .tabs__title {
-       
-       padding-bottom: 6px;
-     }
 
-     .tabs__content_title {
-         margin-left: 16px;
-         margin-top: 62px;
-         margin-bottom: 32px;
-         
-     font-weight: 400;
-     font-size: 20px;
-     line-height: 24px;
-     }
-     
+    .tabs__title {
+
+        padding-bottom: 6px;
+    }
+
+    .tabs__content_title {
+        margin-left: 16px;
+        margin-top: 62px;
+        margin-bottom: 32px;
+
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
 }
