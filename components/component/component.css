@@ -22,7 +22,7 @@ padding-bottom: 24px;
 color: var(--grey-4);
 }
 
-@media (max-width:575.98px) {
+@media (max-width:767px) {
     .component {
         flex-grow: 1;
         flex-shrink: 1;

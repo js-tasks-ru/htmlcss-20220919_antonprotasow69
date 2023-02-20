@@ -112,7 +112,7 @@
   height: 24px;
 }
 
-@media (max-width:575.98px) {
+@media (max-width:767px) {
   .modal_button {
     margin-left: 16px;
   }

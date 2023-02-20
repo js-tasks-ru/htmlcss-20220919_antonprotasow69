@@ -62,7 +62,7 @@
     height: 24px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 767px) {
     .burger-menu {
         display: none;
     }

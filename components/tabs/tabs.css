@@ -128,7 +128,7 @@
 
 }
 
-@media (max-width:575.98px) {
+@media (max-width:767px) {
     .tabs__scroller {
         white-space: nowrap;
         gap: 24px;

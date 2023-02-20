@@ -109,7 +109,7 @@
    cursor: auto;
 }
 
-@media (max-width:575.98px) {
+@media (max-width:767px) {
 
 
    .checkbox__state {
