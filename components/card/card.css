@@ -12,11 +12,12 @@
     padding: 32px 25px 32px 25px;
     position: relative;
     align-items: center;
-    transition: transform 250ms ease-in-out;
+    transition: transform 300ms ease-in-out;
 }
 
 .card:hover {
-    transform: scale(105%);
+    transform: scale(103%);
+    box-shadow: 2px 2px 4px 3px rgba(33, 36, 41, 0.3);
 }
 
 
