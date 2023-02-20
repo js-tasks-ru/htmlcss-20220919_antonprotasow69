@@ -1,15 +1,14 @@
-.main__second-page{
+.main__second-page {
     margin-top: 36px;
     grid-area: main;
-    display:grid;
-    grid-template-columns: auto 1fr;
+    display: grid;
+    grid-template-columns: 285px 1fr;
     min-height: calc(100vh - 130px);
-    margin-left: 165px;
-    margin-right: 165px;
+
 }
 
-@media (max-width: 575.98px) {
-    
+@media (max-width: 767px) {
+
     .main__second-page {
         grid-template-columns: 1fr;
         margin-top: 0px;
@@ -17,6 +16,3 @@
         margin-right: 0px;
     }
 }
-
-
-

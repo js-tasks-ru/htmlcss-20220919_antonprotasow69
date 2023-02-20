@@ -2,95 +2,172 @@
 <!-- страница компонента-->
 
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="../components/main/main.css">
-    <link rel="stylesheet" href="../components/menu/menu.css">
-    <link rel="stylesheet" href="../components/component/component.css">
-    <link rel="stylesheet" href="../components/component/footer.css">
-    <link rel="stylesheet" href="../04-lection2/01-histogram/histogram.css">
-  </head>
-   <body>
-     <div class="page">
-      <header class="header header__second-page header__second_bg_transparent"> 
-      <div class="header__second-logo">  <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_18343_447)">
-            <rect y="1" width="30" height="30" fill="#212429"/>
-            <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
-            <path d="M78 0L110 32H78V0Z" fill="#212429"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_18343_447">
-            <rect width="110" height="32" fill="white"/>
-            </clipPath>
-            </defs>
-            </svg></div>
-        <div class="container">
-         
-        </div>
-     </header>
-      <main class="main__second-page">
-           <ul class="menu">
-           
-            <li class="menu__title">Components</li>
-            <li class="menu__box"><a class="menu__box" href="">Modal</a></li>
-            <li class="menu__box"><a class="menu__box" href="">Tooltip</a></li>
-            <li class="menu__box"><a class="menu__box" href="">Avatar</a></li>
-            <li class="menu__box"><a class="menu__box" href="">Calendar</a></li>
-            <li class="menu__box"><a class="menu__box" href="">Histogram</a></li>
-            <li class="menu__box"><a class="menu__box" href="">Custom form elements</a></li>
-            <li class="menu__box"><a class="menu__box" href="">Main Page</a></li>
-        
-          </ul>
-            <div class="component">
-             <p class="component__histogram">Histogram</p>
-             <div class="histogram ">
-              <div class="histogram__block ">
-                 <p class="histogram__order ">Total orders</p>
-                 <a class="histogram__link " href="">View all</a>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="../components/main/main.css">
+  <link rel="stylesheet" href="../components/menu/menu.css">
+  <link rel="stylesheet" href="../components/component/component.css">
+  <link rel="stylesheet" href="../components/component/footer.css">
+  <link rel="stylesheet" href="../06-lection4/01-avatar/avatar.css">
+  <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
+  <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
+  <link rel="stylesheet" href="../components/tabs/tabs.css">
+
+</head>
+
+<body>
+  <div class="page">
+    <header class="header header__second-page header__second_bg_transparent">
+      <div class="container">
+        <div class="header__second-logo">
+          <button id="burger-menu-open" class="header__burger-open">
+            <svg class="burger-menu__icon">
+              <use href="../assets/images/icons-sprite.svg#burger"></use>
+            </svg>
+          </button>
+          <a href="../index.html"> <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_18343_447)">
+                <rect y="1" width="30" height="30" fill="var(--black)" />
+                <rect x="38" width="32" height="32" rx="16" fill="var(--black)" />
+                <path d="M78 0L110 32H78V0Z" fill="var(--black)" />
+              </g>
+              <defs>
+                <clipPath id="clip0_18343_447">
+                  <rect width="110" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg></a>
+          <div class="header__theme-changer">
+            <svg class="header__sun-icon">
+              <use href="../assets/images/icons-sprite.svg#sun"></use>
+            </svg>
+            <label class="toggle">
+              <input type="checkbox" class="toggle__input" id="theme-changer">
+              <div class="toggle__state">
+                <div class="toggle__control">
+                  <div class="toggle__icon">
+                  </div>
+                </div>
               </div>
-               <p class="histogram__count ">50254</p>
-               <div class="histogram__chart ">
-                 <div style="height: 100%" class="histogram__column"></div>
-                 <div style="height: 54%" class="histogram__column"></div>
-                 <div style="height: 36%" class="histogram__column"></div>
-                 <div style="height: 72%" class="histogram__column"></div>
-                 <div style="height: 22%" class="histogram__column"></div>
-                 <div style="height: 15%" class="histogram__column"></div>
-                 <div style="height: 35%" class="histogram__column"></div>
-                 <div style="height: 48%" class="histogram__column"></div>
-                 <div style="height: 29%" class="histogram__column"></div>
-                 <div style="height: 77%" class="histogram__column"></div>
-                 <div style="height: 65%" class="histogram__column"></div>
-                 <div style="height: 87%" class="histogram__column"></div>
-                 <div style="height: 97%" class="histogram__column"></div>
-                 <div style="height: 11%" class="histogram__column"></div>
-                 <div style="height: 4%" class="histogram__column"></div>
-                 <div style="height: 62%" class="histogram__column"></div>
-                 <div style="height: 31%" class="histogram__column"></div>
-                 <div style="height: 45%" class="histogram__column"></div>
-                 <div style="height: 56%" class="histogram__column"></div>
-                 <div style="height: 88%" class="histogram__column"></div>
-                 <div style="height: 19%" class="histogram__column"></div>
-                 <div style="height: 13%" class="histogram__column"></div>
-                 <div style="height: 27%" class="histogram__column"></div>
-                 <div style="height: 33%" class="histogram__column"></div>
-                 <div style="height: 44%" class="histogram__column"></div>
-                 <div style="height: 91%" class="histogram__column"></div>
-                 <div style="height: 68%" class="histogram__column"></div>
-                 <div style="height: 62%" class="histogram__column"></div>
-                 <div style="height: 37%" class="histogram__column"></div>
-                 <div style="height: 21%" class="histogram__column"></div>
-               </div>
+            </label>
+            <svg class="header__moon-icon">
+              <use href="../assets/images/icons-sprite.svg#moon"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+          <div class="burger-menu__wrapper">
+            <button id="burger-menu-close" class="burger-menu__burger-close"> <svg class="burger-menu__icon">
+                <use href="../assets/images/icons-sprite.svg#close-menu"></use>
+              </svg>
+            </button>
+            <a href="../index.html"><svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_18343_447)">
+                  <rect y="1" width="30" height="30" fill="var(--black)" />
+                  <rect x="38" width="32" height="32" rx="16" fill="var(--black)" />
+                  <path d="M78 0L110 32H78V0Z" fill="var(--black)" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_18343_447">
+                    <rect width="110" height="32" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg></a>
+          </div>
+          <div class="burger-menu__theme">
+            <div>Dark mode</div>
+            <label class="toggle">
+              <input type="checkbox" class="toggle__input" id="theme-changer-mobile">
+              <div class="toggle__state">
+                <div class="toggle__control">
+                  <div class="toggle__icon">
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+          <ul class="menu menu_mobile">
+            <li class="menu__title">Components</li>
+            <li class="menu__box"><a class="menu__box" href="./template_modal.html">Modal</a></li>
+            <li class="menu__box"><a class="menu__box " href="./template_tooltip.html">Tooltip</a></li>
+            <li class="menu__box"><a class="menu__box menu__box_active " href="./template_avatar.html">Avatar</a></li>
+            <li class="menu__box"><a class="menu__box" href="./template_calendarl.html">Calendar</a></li>
+            <li class="menu__box"><a class="menu__box" href="./template_histogram.html">Histogram</a></li>
+            <li class="menu__box"><a class="menu__box" href="./template_custom_form_elements.html">Custom form elements</a></li>
+            <li class="menu__box"><a class="menu__box" href="../index.html">Main Page</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="main__second-page">
+          <ul class="menu">
+            <li class="menu__title">Components</li>
+            <li class="menu__box"><a class="menu__box" href="./template_modal.html">Modal</a></li>
+            <li class="menu__box"><a class="menu__box " href="./template_tooltip.html">Tooltip</a></li>
+            <li class="menu__box"><a class="menu__box menu__box_active " href="./template_avatar.html">Avatar</a></li>
+            <li class="menu__box"><a class="menu__box" href="./template_calendarl.html">Calendar</a></li>
+            <li class="menu__box"><a class="menu__box" href="./template_histogram.html">Histogram</a></li>
+            <li class="menu__box"><a class="menu__box" href="./template_custom_form_elements.html">Custom form elements</a></li>
+            <li class="menu__box"><a class="menu__box" href="../index.html">Main Page</a></li>
+          </ul>
+
+          <div class="component">
+            <p class="component__title">Avatar</p>
+            <div class="avatar">
+              <img src="../assets/images/avatar.jpg" alt="avatar" class="avatar__img">
             </div>
+            <div class="tabs tabs_inner">
+
+              <input type="radio" id="html-tab" name="tabs-inner" class="tabs_input" checked>
+              <input type="radio" id="css-tab" name="tabs-inner" class="tabs_input">
+
+              <div class="tabs__scroller">
+                <label class="tabs__radio" for="html-tab">
+                  <div class="tabs__title"> HTML</div>
+                  <div class="tabs_icon"> </div>
+                </label>
+
+                <label class="tabs__radio" for="css-tab">
+                  <div class="tabs__title">CSS</div>
+                  <div class="tabs_icon"> </div>
+                </label>
+              </div>
+              <div class="tabs_tab-divider"></div>
+              <div class="tabs__content tabs__content_html">
+                <pre><code>&lt;div class=&quot;avatar&quot;&gt;
+    &lt;img src=&quot;../assets/images/avatar.jpg&quot; alt=&quot;avatar&quot; class=&quot;avatar__img&quot;&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tabs__content tabs__content_css">
+                <pre><code>.avatar {
+                  display:flex;
+                  
+              }
+              .avatar__img {
+                  box-sizing: border-box;
+                  
+                  max-height: 100%;
+                  max-width: 100%;
+                  border-radius: 50%;
+                  object-fit: cover;
+              }</code></pre>
+              </div>
             </div>
-          
-       </main>
-       <footer class="footer footer__second-page footer_bg_transparent">
-       <div class="footer__inscription">Reusable component library</div>
-      </footer>
-     </div>
-   </body>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer footer__second-page footer_bg_transparent">
+      <div class="footer__inscription">Reusable component library</div>
+    </footer>
+  </div>
+</body>
+<script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+<script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+
 </html>

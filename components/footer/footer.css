@@ -1,9 +1,9 @@
 .footer__second-page {
-    display:flex;
-    height: 130px;
-    grid-area:footer;
-   justify-content:center;
-    align-items: center;
+  display: flex;
+  height: 130px;
+  grid-area: footer;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer_color {
@@ -25,36 +25,64 @@
 
 .footer__text {
   font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 
-text-align: center;
+  text-align: center;
   margin: 0;
-  color:var(--black);
-  height:96px;
+  color: var(--black);
+  height: 96px;
   padding-bottom: 136px;
-  
+
 }
 
 .footer_bg_transparent {
-  background-color: #F9FAFC;
+  background-color: var(--grey-1);
 
 }
 
 .footer__inscription {
-   
-    /* h5 */
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--grey-3);
-  
+
+  /* h5 */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--grey-3);
+
 }
 
+@media (max-width:767px) {
 
+  .footer__title {
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+
+    padding-bottom: 16px;
+    padding-top: 32px;
+  }
+
+  .footer__text {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 12px;
+    line-height: 20px;
+    height: 96px;
+    padding-bottom: 32px;
+
+  }
+
+
+
+
+
+
+
+}

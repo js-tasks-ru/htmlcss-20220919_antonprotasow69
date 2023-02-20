@@ -1,50 +1,50 @@
 .histogram {
-    pointer-events: none;
-    display:block;
+    white-space: nowrap;
+    display: block;
     box-sizing: border-box;
-    background-color: #FFFFFF;
-    border: 1px solid #ACB5BD;
+    background-color: var(--white);
+    border: 1px solid var(--grey-3);
     border-radius: 8px;
     width: 100%;
     padding: 16px 24px 24px;
 }
-    
+
 .histogram__block {
-     font-style: normal;
+    font-style: normal;
     font-weight: 400;
-    font-size: 16px;        
-  
-        display:flex;
-        justify-content: space-between;
-        margin: 0;
-        
+    font-size: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
 }
-    
+
 .histogram__link {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-        margin: 0;
-       color: #4263EB;
-       text-decoration: none;
-       margin-top: 3px;
-       
+    margin-left: 47px;
+    color: var(--blue-2);
+    text-decoration: none;
+    margin-top: 3px;
+
 }
-    
+
 .histogram__order {
     font-family: Inter;
     margin: 0;
     font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-opacity: 0.8;
-color: var(--black);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.8;
+    color: var(--black);
 
 }
-    
+
 .histogram__count {
     font-family: Inter;
     font-size: 20px;
@@ -52,37 +52,54 @@ color: var(--black);
     margin: 0;
     box-sizing: border-box;
     padding-top: 6px;
-    color: #212429
-}
-    
-.histogram__chart {
-    margin-top: 39px;
-    display:flex;
-    flex-direction: flex-start; 
-    align-items: flex-end;
-     gap: 1px;
-    height: 50px;
-    
-    padding-left:2px;
-}
-.histogram__column {
-        
-    flex-basis: 100%;
-    background-color: #4263EB;
-    
+    color: var(--black);
 }
 
-@media (max-width:575.98px) {
-    
+.histogram__chart {
+    margin-top: 39px;
+    display: flex;
+    flex-direction: flex-start;
+    align-items: flex-end;
+    gap: 1px;
+    height: 50px;
+
+    padding-left: 2px;
+    animation-name: histogram;
+    animation-duration: 1s;
+
+}
+
+.histogram__column {
+
+    flex-basis: 100%;
+    background-color: var(--blue-2);
+}
+
+@keyframes histogram {
+    0% {
+        transform-origin: bottom center;
+        transform: scale(1, 0)
+    }
+
+    100% {
+        transform-origin: bottom center;
+        transform: scale(1, 1)
+    }
+}
+
+@media (max-width:767px) {
+
     .histogram {
         padding: 6px 8px 8px;
         margin-top: 34px;
     }
+
     .histogram__block {
         font-size: 8px;
         padding-right: 8px;
     }
-    .histogram__count{
+
+    .histogram__count {
         font-size: 8px;
         height: 13px;
     }
@@ -92,11 +109,11 @@ color: var(--black);
         line-height: 16px;
         margin-top: 1px;
     }
-    
+
     .histogram__order {
-        
-   font-size: 8px;
-   line-height: 16px;
+
+        font-size: 8px;
+        line-height: 16px;
 
     }
 
@@ -104,5 +121,5 @@ color: var(--black);
         margin-top: 13px;
         height: 25px;
     }
-    
+
 }

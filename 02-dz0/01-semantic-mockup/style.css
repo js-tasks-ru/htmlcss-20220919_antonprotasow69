@@ -1,35 +1,36 @@
 html {
-    
+
     background-color: green;
 }
+
 h1 {
     margin: -20px;
-   
+
     margin-bottom: 0px;
     margin-top: 0px;
     padding-bottom: 10px;
-    padding-top:10px;
+    padding-top: 10px;
     background-color: red;
-    color:aliceblue;
+    color: aliceblue;
     font-size: 4em;
     padding-left: 50%;
-    
-    
+
+
 }
 
 nav {
-    
+
     margin: -10px;
     padding-left: 42.5%;
     padding-bottom: 20px;
-    padding-top:20px;
+    padding-top: 20px;
     background-color: orange;
     font-size: 2.25em;
-    
+
 }
 
-article   {
-    
+article {
+
     padding-left: 10px;
     background-color: blue;
     font-size: 250%;
@@ -46,7 +47,7 @@ footer {
     font-size: 4em;
     padding-left: 50%;
     background-color: violet;
-    padding-bottom:40px;
-    padding-top:40px;
-    color:brown;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    color: brown;
 }

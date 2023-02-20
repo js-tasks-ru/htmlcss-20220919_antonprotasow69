@@ -1,12 +1,14 @@
 .header {
   box-sizing: border-box;
+
 }
 
 .header_color {
   background-color: var(--white);
 }
+
 .header__title {
-  
+
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -21,6 +23,35 @@
 .header__logo {
   padding-top: 24px;
   padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__sun-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header__theme-changer {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.header__moon-icon {
+  width: 24px;
+  height: 24px;
+
+}
+
+.header__burger-open {
+  position: absolute;
+  background: none;
+  border: none;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
 }
 
 
@@ -30,46 +61,66 @@
 }
 
 
-.header__second-page{
+.header__second-page {
   height: 82px;
   grid-area: header;
   padding: 0;
 }
+
 .header__second_bg_transparent {
-  background-color: rgba(249, 250, 252, 1);
-}
-.header__second-logo {
-  padding-left: 165px;
-  padding-top: 25px;
+  background-color: var(--grey-1);
 }
 
-@media (max-width:575.98px) {
+.header__second-logo {
+  display: flex;
+  padding-top: 25px;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+
+@media (max-width:767px) {
   .header__logo {
     text-align: center;
     padding-bottom: 48px;
     padding-top: 16px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+  .header__theme-changer {
+    display: none;
+  }
+
   .header__title {
     padding-left: 16px;
-    padding-bottom: 69px;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 38px;
-color: var(--grey-4);
-padding-right: 71px;
+    padding-bottom: 32px;
+
+    font-size: 28px;
+    line-height: 38px;
+
+    padding-right: 71px;
   }
 
   .header__second-page {
     height: 64px;
-   
+
   }
-.header__second-logo {
+
+  .header__second-logo {
     text-align: center;
     padding-left: 0px;
     padding-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+}
+
+@media (min-width:576px) {
+  .header__burger-open {
+    display: none;
   }
 }
